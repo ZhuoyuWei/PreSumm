@@ -52,7 +52,7 @@ def run(args, device_id, error_queue):
     setattr(args, 'gpu_ranks', [int(i) for i in args.gpu_ranks])
 
     try:
-        gpu_rank = distributed.multi_init(device_id, args.world_size, args.gpu_ranks)
+        gpu_rank = distributed.multi_init(device_id, args.world_size, args.gpu_ranks,args.dist_init_method)
         print('gpu_rank %d' % gpu_rank)
         if gpu_rank != args.gpu_ranks[device_id]:
             raise AssertionError("An error occurred in \
