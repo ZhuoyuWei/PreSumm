@@ -871,6 +871,10 @@ class XLNetModel(XLNetPreTrainedModel):
         if self.mem_len is not None and self.mem_len > 0 and self.output_past:
             outputs = outputs + (new_mems,)
 
+        #tmp fix by Zhuoyu
+        self.output_hidden_states=True
+        self.output_attentions=True
+
         if self.output_hidden_states:
             if output_g is not None:
                 hidden_states = tuple(h.permute(1, 0, 2).contiguous() for hs in hidden_states for h in hs)

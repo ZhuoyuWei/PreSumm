@@ -4,8 +4,7 @@
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_simple.sh" afterPath="$PROJECT_DIR$/scripts/train_simple.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/model_builder.py" afterPath="$PROJECT_DIR$/src/models/model_builder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train.py" afterPath="$PROJECT_DIR$/src/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+            <state relative-caret-position="656">
+              <caret line="136" column="90" lean-forward="false" selection-start-line="136" selection-start-column="90" selection-end-line="136" selection-end-column="90" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#346#1317#0" expanded="false" />
@@ -44,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_simple.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modeling_xlnet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transformers/modeling_xlnet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="876" column="0" lean-forward="true" selection-start-line="876" selection-start-column="0" selection-end-line="876" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_simple.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/train_simple.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -90,8 +99,8 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="41" />
+            <state relative-caret-position="315">
+              <caret line="93" column="63" lean-forward="true" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
               <folding>
                 <element signature="e#57#88#0" expanded="true" />
                 <element signature="e#5991#6788#0" expanded="false" />
@@ -111,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>va</find>
-      <find>vali</find>
       <find>test_a</find>
       <find>mode</find>
       <find>data</find>
@@ -137,9 +144,12 @@
       <find>large</find>
       <find>ExtSummarizer</find>
       <find>ExtTransformerEncoder</find>
-      <find>encoder</find>
       <find>BertModel</find>
+      <find>encoder</find>
       <find>BertConfig</find>
+      <find>xlnet</find>
+      <find>xlnetmodel</find>
+      <find>forward</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,8 +162,9 @@
         <option value="$PROJECT_DIR$/src/distributed.py" />
         <option value="$PROJECT_DIR$/src/train_extractive.py" />
         <option value="$PROJECT_DIR$/src/train.py" />
-        <option value="$PROJECT_DIR$/src/models/model_builder.py" />
         <option value="$PROJECT_DIR$/scripts/train_simple.sh" />
+        <option value="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" />
+        <option value="$PROJECT_DIR$/src/models/model_builder.py" />
       </list>
     </option>
   </component>
@@ -192,7 +203,23 @@
             <path>
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573811371923</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add model_name and pretrain_name">
+      <created>1574045454955</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574045454955</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -281,7 +315,8 @@
     <MESSAGE value="replace pytorch_transformer from lib to transformers from code" />
     <MESSAGE value="add dist_init_method into args" />
     <MESSAGE value="change api for new BERT model" />
-    <option name="LAST_COMMIT_MESSAGE" value="change api for new BERT model" />
+    <MESSAGE value="add model_name and pretrain_name" />
+    <option name="LAST_COMMIT_MESSAGE" value="add model_name and pretrain_name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -451,16 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#4130#5118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -479,10 +504,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_simple.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="41" />
+        <state relative-caret-position="315">
+          <caret line="93" column="63" lean-forward="true" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
           <folding>
             <element signature="e#57#88#0" expanded="true" />
             <element signature="e#5991#6788#0" expanded="false" />
@@ -490,10 +523,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#4130#5118#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_xlnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="876" column="0" lean-forward="true" selection-start-line="876" selection-start-column="0" selection-end-line="876" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="656">
+          <caret line="136" column="90" lean-forward="false" selection-start-line="136" selection-start-column="90" selection-end-line="136" selection-end-column="90" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#346#1317#0" expanded="false" />
@@ -501,14 +552,6 @@
             <element signature="e#2475#3530#0" expanded="false" />
             <element signature="e#3593#3774#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_simple.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
