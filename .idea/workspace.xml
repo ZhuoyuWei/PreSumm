@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_simple.sh" afterPath="$PROJECT_DIR$/scripts/train_simple.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/model_builder.py" afterPath="$PROJECT_DIR$/src/models/model_builder.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="136" column="90" lean-forward="false" selection-start-line="136" selection-start-column="90" selection-end-line="136" selection-end-column="90" />
+            <state relative-caret-position="677">
+              <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="56" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#346#1317#0" expanded="false" />
@@ -282,13 +281,20 @@
       <option name="project" value="LOCAL" />
       <updated>1574045454955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hot fix XLNet output|hidden states and output layer">
+      <created>1574048955587</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574048955587</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -316,7 +322,8 @@
     <MESSAGE value="add dist_init_method into args" />
     <MESSAGE value="change api for new BERT model" />
     <MESSAGE value="add model_name and pretrain_name" />
-    <option name="LAST_COMMIT_MESSAGE" value="add model_name and pretrain_name" />
+    <MESSAGE value="hot fix XLNet output|hidden states and output layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="hot fix XLNet output|hidden states and output layer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -543,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="136" column="90" lean-forward="false" selection-start-line="136" selection-start-column="90" selection-end-line="136" selection-end-column="90" />
+        <state relative-caret-position="677">
+          <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="56" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#346#1317#0" expanded="false" />

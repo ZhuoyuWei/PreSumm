@@ -134,6 +134,9 @@ class Bert(nn.Module):
 
     def forward(self, x, segs, mask):
         if(self.finetune):
+            tmp=self.model(input_ids=x, token_type_ids=segs, attention_mask=mask)
+            print('debug by zhuoyu: {}'.format(len(tmp)))
+            print(tmp)
             top_vec, _ = self.model(input_ids=x, token_type_ids=segs, attention_mask=mask)
         else:
             self.eval()
