@@ -10,7 +10,7 @@ from models.optimizers import Optimizer
 
 
 #from pytorch_transformers import BertModel, BertConfig
-from transformers import BertModel,BertConfig
+
 
 
 
@@ -118,12 +118,17 @@ def get_generator(vocab_size, dec_hidden_size, device):
     return generator
 
 class Bert(nn.Module):
-    def __init__(self, large, temp_dir, finetune=False):
+    def __init__(self, model_name, pretrain_name, temp_dir, finetune=False):
         super(Bert, self).__init__()
-        if(large):
-            self.model = BertModel.from_pretrained('bert-large-uncased', cache_dir=temp_dir)
-        else:
-            self.model = BertModel.from_pretrained('bert-base-uncased', cache_dir=temp_dir)
+        if model_name == 'bert':
+            from transformers import BertModel
+            self.model = BertModel.from_pretrained(pretrain_name, cache_dir=temp_dir)
+        elif model_name == 'xlnet':
+            from transformers import XLNetModel
+            self.model = XLNetModel.from_pretrained(pretrain_name,cache_dir=temp_dir)
+        elif model_name == 'roberta':
+            from transformers import RobertaModel
+            self.model = RobertaModel.from_pretrained(pretrain_name,cache_dir=temp_dir)
 
         self.finetune = finetune
 
@@ -142,14 +147,27 @@ class ExtSummarizer(nn.Module):
         super(ExtSummarizer, self).__init__()
         self.args = args
         self.device = device
-        self.bert = Bert(args.large, args.temp_dir, args.finetune_bert)
+        self.bert = Bert(args.model_name,args.pretrained_name, args.temp_dir, args.finetune_bert)
 
         self.ext_layer = ExtTransformerEncoder(self.bert.model.config.hidden_size, args.ext_ff_size, args.ext_heads,
                                                args.ext_dropout, args.ext_layers)
         if (args.encoder == 'baseline'):
-            bert_config = BertConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
+            if args.model_name == 'bert':
+                from transformers import BertModel,BertConfig
+                bert_config = BertConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
                                      num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads, intermediate_size=args.ext_ff_size)
-            self.bert.model = BertModel(bert_config)
+                self.bert.model = BertModel(bert_config)
+            elif args.model_name == 'xlnet':
+                from transformers import XLNetModel,XLNetConfig
+                xlnet_config = XLNetConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
+                                     num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads, intermediate_size=args.ext_ff_size)
+                self.bert.model = XLNetModel(xlnet_config)
+            elif args.model_name == 'roberta':
+                from transformers import RobertaModel, RobertaConfig
+                roberta_config = RobertaConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
+                                     num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads, intermediate_size=args.ext_ff_size)
+                self.bert.model = RobertaModel(roberta_config)
+
             self.ext_layer = Classifier(self.bert.model.config.hidden_size)
 
         if(args.max_pos>512):

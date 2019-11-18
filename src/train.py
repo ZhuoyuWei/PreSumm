@@ -109,6 +109,8 @@ if __name__ == '__main__':
     parser.add_argument("-block_trigram", type=str2bool, nargs='?', const=True, default=True)
 
     parser.add_argument("-dist_init_method", default='tcp://localhost:10000', type=str)
+    parser.add_argument("-model_name",default='bert-base-uncased',type=str)
+    parser.add_argument("-pretrained_name",default='bert-base-uncased',type=str)
 
     args = parser.parse_args()
     args.gpu_ranks = [int(i) for i in range(len(args.visible_gpus.split(',')))]
