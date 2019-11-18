@@ -870,10 +870,8 @@ class XLNetModel(XLNetPreTrainedModel):
 
         if self.mem_len is not None and self.mem_len > 0 and self.output_past:
             outputs = outputs + (new_mems,)
-
-        #tmp fix by Zhuoyu
-        self.output_hidden_states=True
-        self.output_attentions=True
+        else:
+            outputs = outputs + (None,)
 
         if self.output_hidden_states:
             if output_g is not None:
