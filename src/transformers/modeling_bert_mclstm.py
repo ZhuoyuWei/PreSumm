@@ -370,7 +370,8 @@ class BertLayer(nn.Module):
         self.intermediate = BertIntermediate(config)
         self.output = BertOutput(config)
 
-        self.chunk_num=config.chunk_num
+        #self.chunk_num=config.chunk_num
+        self.chunk_num=4
         self.global_layer=GlobalLSTMLayer(config)
 
     def forward(self, hidden_states, attention_mask=None, head_mask=None, encoder_hidden_states=None, encoder_attention_mask=None):

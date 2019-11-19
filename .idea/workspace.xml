@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/train_xlnet.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/model_builder.py" afterPath="$PROJECT_DIR$/src/models/model_builder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/__init__.py" afterPath="$PROJECT_DIR$/src/transformers/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="1201" column="20" lean-forward="true" selection-start-line="1201" selection-start-column="20" selection-end-line="1201" selection-end-column="33" />
+            <state relative-caret-position="173">
+              <caret line="366" column="43" lean-forward="true" selection-start-line="366" selection-start-column="43" selection-end-line="366" selection-end-column="43" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
@@ -33,58 +30,7 @@
                 <element signature="e#12844#14685#0" expanded="false" />
                 <element signature="e#13086#14243#0" expanded="false" />
                 <element signature="e#14727#15318#0" expanded="false" />
-                <element signature="e#29989#38787#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/transformers/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="111" column="32" lean-forward="false" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
-              <folding>
-                <element signature="e#57#88#0" expanded="true" />
-                <element signature="e#5991#6788#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#346#1317#0" expanded="false" />
-                <element signature="e#1370#2423#0" expanded="false" />
-                <element signature="e#2475#3530#0" expanded="false" />
-                <element signature="e#3593#3774#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#30015#38813#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,11 +72,11 @@
       <find>BertOutput</find>
       <find>BertSelfOutput</find>
       <find>BertSelfAttention</find>
-      <find>BERTLayer</find>
       <find>BertLayer</find>
       <find>BertEncoder</find>
       <find>BertLSTM</find>
       <find>model_name ==</find>
+      <find>BERTLayer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,9 +93,11 @@
         <option value="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" />
         <option value="$PROJECT_DIR$/scripts/train_xlnet.sh.py" />
         <option value="$PROJECT_DIR$/src/tt.py" />
-        <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
         <option value="$PROJECT_DIR$/src/transformers/__init__.py" />
         <option value="$PROJECT_DIR$/src/models/model_builder.py" />
+        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh.py" />
+        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
+        <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
       </list>
     </option>
   </component>
@@ -206,6 +154,12 @@
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="transformers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574050493683</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add bert lstm model">
+      <created>1574144667001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574144667001</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -330,7 +291,8 @@
     <MESSAGE value="hot fix XLNet output|hidden states and output layer" />
     <MESSAGE value="debug at 11.18" />
     <MESSAGE value="try add None for output of xlnet" />
-    <option name="LAST_COMMIT_MESSAGE" value="try add None for output of xlnet" />
+    <MESSAGE value="add bert lstm model" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bert lstm model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -363,7 +325,7 @@
             <element signature="e#12844#14685#0" expanded="false" />
             <element signature="e#13086#14243#0" expanded="false" />
             <element signature="e#14727#15318#0" expanded="false" />
-            <element signature="e#29989#38787#0" expanded="false" />
+            <element signature="e#30015#38813#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -442,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1743">
@@ -522,20 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_simple.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_xlnet.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -543,6 +484,22 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_xlnet.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_simple.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,10 +522,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="172" column="38" lean-forward="false" selection-start-line="172" selection-start-column="37" selection-end-line="172" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#346#1317#0" expanded="false" />
+            <element signature="e#1370#2423#0" expanded="false" />
+            <element signature="e#2475#3530#0" expanded="false" />
+            <element signature="e#3593#3774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="1201" column="20" lean-forward="true" selection-start-line="1201" selection-start-column="20" selection-end-line="1201" selection-end-column="33" />
+        <state relative-caret-position="173">
+          <caret line="366" column="43" lean-forward="true" selection-start-line="366" selection-start-column="43" selection-end-line="366" selection-end-column="43" />
           <folding>
             <element signature="e#737#819#0" expanded="true" />
             <element signature="e#3337#5944#0" expanded="false" />
@@ -579,21 +566,7 @@
             <element signature="e#12844#14685#0" expanded="false" />
             <element signature="e#13086#14243#0" expanded="false" />
             <element signature="e#14727#15318#0" expanded="false" />
-            <element signature="e#29989#38787#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#346#1317#0" expanded="false" />
-            <element signature="e#1370#2423#0" expanded="false" />
-            <element signature="e#2475#3530#0" expanded="false" />
-            <element signature="e#3593#3774#0" expanded="false" />
+            <element signature="e#30015#38813#0" expanded="false" />
           </folding>
         </state>
       </provider>
