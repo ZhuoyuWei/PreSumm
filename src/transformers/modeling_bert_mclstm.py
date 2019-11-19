@@ -348,13 +348,14 @@ class GlobalLSTMLayer(nn.Module):
         super(GlobalLSTMLayer, self).__init__()
         self.lstm_layer=1
         self.lstm=nn.LSTM(config.hidden_size,config.hidden_size,self.lstm_layer,bidirectional=True)
-        self.h0=torch.zeros(2*self.lstm_layer,config.hidden_size,config.hidden_size)
-        self.c0=torch.zeros(2*self.lstm_layer,config.hidden_size,config.hidden_size)
+
         self.output = BertSelfOutput(config)
     def forward(self, hidden_chunks):
         hidden_states=torch.cat(hidden_chunks,dim=1)
-        lstm_output, (hn, cn)=self.lstm(hidden_states.transpose(0,1),(self.h0,self.c0))
         ori_size=hidden_states.size()
+        h0=torch.zeros(2*self.lstm_layer,ori_size[0],ori_size[2])
+        c0=torch.zeros(2*self.lstm_layer,ori_size[0],ori_size[2])
+        lstm_output, (hn, cn)=self.lstm(hidden_states.transpose(0,1),(h0,c0))
         lstm_output=lstm_output.hidden_states.transpose(0,1).view(ori_size+[2]).sum(dim=-1).squeeze(-1)
         outputs=self.output(lstm_output,hidden_states)
         return outputs
