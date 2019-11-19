@@ -371,7 +371,7 @@ class GlobalMCLSTMLayer(nn.Module):
         lstm_output, (hn, cn)=self.lstm(hidden_states_t.transpose(0,1).contiguous()) #lstm_output = c * bl * 2d
         lstm_output=lstm_output.transpose(0,1).view(ori_size[0],ori_size[2],ori_size[1],ori_size[3],2).contiguous().sum(dim=-1).squeeze(-1) #lstm_output = b * l * c * d
         lstm_output=lstm_output.transpose(1,2).contiguous() #b * c * l * d
-        outputs=self.output(lstm_output.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3].contiguous())
+        outputs=self.output(lstm_output.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3]).contiguous()
                             ,hidden_states.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3]).contiguous())
         return outputs
 
