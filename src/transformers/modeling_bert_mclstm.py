@@ -379,10 +379,10 @@ class BertLayer(nn.Module):
 
         print('debug by zhuoyu, hidden_states {}'.format(hidden_states.size()))
         print('debug by zhuoyu, attention_mask {}'.format(attention_mask.size()))
-
-        hidden_chunks=hidden_states.split(self.chunk_num,dim=1)
+        seq_len=hidden_states.size()[1]
+        hidden_chunks=hidden_states.split(seq_len//self.chunk_num,dim=1)
         if attention_mask is not None:
-            attention_mask_chunks=attention_mask.split(self.chunk_num,dim=1)
+            attention_mask_chunks=attention_mask.split(seq_len//self.chunk_num,dim=-1)
         else:
             attention_mask_chunks = [None for i in range(self.chunk_num)]
 
