@@ -377,6 +377,9 @@ class BertLayer(nn.Module):
 
     def forward(self, hidden_states, attention_mask=None, head_mask=None, encoder_hidden_states=None, encoder_attention_mask=None):
 
+        print('debug by zhuoyu, hidden_states {}'.format(hidden_states.size()))
+        print('debug by zhuoyu, attention_mask {}'.format(attention_mask.size()))
+
         hidden_chunks=hidden_states.split(self.chunk_num,dim=1)
         if attention_mask is not None:
             attention_mask_chunks=attention_mask.split(self.chunk_num,dim=1)
@@ -386,6 +389,8 @@ class BertLayer(nn.Module):
         layer_output_chucks=[]
         output_chucks=[]
         for i,hidden_chunk in enumerate(hidden_chunks):
+            print('sub {} debug by zhuoyu, hidden_states {}'.format(i,hidden_chunk.size()))
+            print('sub {} debug by zhuoyu, attention_mask {}'.format(i,attention_mask_chunks[i].size()))
             self_attention_outputs = self.attention(hidden_chunk, attention_mask_chunks[i], head_mask)
             attention_output = self_attention_outputs[0]
             outputs = self_attention_outputs[1:]  # add self attentions if we output attention weights
