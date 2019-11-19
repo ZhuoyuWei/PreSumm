@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="fix bug in mclstm 1119.3:.contiguous()">
+    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
     </list>
@@ -17,8 +17,8 @@
       <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="374" column="110" lean-forward="true" selection-start-line="374" selection-start-column="110" selection-end-line="374" selection-end-column="110" />
+            <state relative-caret-position="476">
+              <caret line="373" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1350" selection-end-column="0" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
@@ -30,7 +30,7 @@
                 <element signature="e#14727#15318#0" expanded="false" />
                 <element signature="e#15354#15902#0" expanded="false" />
                 <element signature="e#15938#16220#0" expanded="false" />
-                <element signature="e#31522#40320#0" expanded="false" />
+                <element signature="e#31506#40304#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -415,13 +415,20 @@
       <option name="project" value="LOCAL" />
       <updated>1574153588926</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix bug in mclstm 1119.4">
+      <created>1574153681863</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1574153681863</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -445,7 +452,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replace pytorch_transformer from lib to transformers from code" />
     <MESSAGE value="add dist_init_method into args" />
     <MESSAGE value="change api for new BERT model" />
     <MESSAGE value="add model_name and pretrain_name" />
@@ -470,7 +476,8 @@
     <MESSAGE value="fix bug in mclstm 1119.1" />
     <MESSAGE value="fix bug in mclstm 1119.2" />
     <MESSAGE value="fix bug in mclstm 1119.3:.contiguous()" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1119.3:.contiguous()" />
+    <MESSAGE value="fix bug in mclstm 1119.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1119.4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,7 +511,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#31522#40320#0" expanded="false" />
+            <element signature="e#31506#40304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -783,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="374" column="110" lean-forward="true" selection-start-line="374" selection-start-column="110" selection-end-line="374" selection-end-column="110" />
+        <state relative-caret-position="476">
+          <caret line="373" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1350" selection-end-column="0" />
           <folding>
             <element signature="e#737#819#0" expanded="true" />
             <element signature="e#3337#5944#0" expanded="false" />
@@ -796,7 +803,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#31522#40320#0" expanded="false" />
+            <element signature="e#31506#40304#0" expanded="false" />
           </folding>
         </state>
       </provider>
