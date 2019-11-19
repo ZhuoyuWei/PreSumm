@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
+    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="download pytorch.model.bin">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" afterPath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="533" column="34" lean-forward="false" selection-start-line="533" selection-start-column="34" selection-end-line="533" selection-end-column="34" />
+            <state relative-caret-position="97">
+              <caret line="371" column="40" lean-forward="true" selection-start-line="371" selection-start-column="40" selection-end-line="371" selection-end-column="40" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
@@ -32,7 +31,7 @@
                 <element signature="e#14727#15318#0" expanded="false" />
                 <element signature="e#15354#15902#0" expanded="false" />
                 <element signature="e#15938#16220#0" expanded="false" />
-                <element signature="e#30054#38852#0" expanded="false" />
+                <element signature="e#30060#38858#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -114,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="958">
-              <caret line="155" column="81" lean-forward="true" selection-start-line="155" selection-start-column="81" selection-end-line="155" selection-end-column="81" />
+            <state relative-caret-position="643">
+              <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#346#1317#0" expanded="false" />
@@ -190,14 +189,14 @@
         <option value="$PROJECT_DIR$/src/transformers/__init__.py" />
         <option value="$PROJECT_DIR$/src/models/model_builder.py" />
         <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh.py" />
-        <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
         <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
+        <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-209" />
-    <option name="y" value="-19" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
@@ -237,6 +236,17 @@
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="transformers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -345,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574145717371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="download pytorch.model.bin">
+      <created>1574146647155</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574146647155</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -385,7 +402,8 @@
     <MESSAGE value="add bert lstm model" />
     <MESSAGE value="tmp change chunk_num" />
     <MESSAGE value="remove chunk_num from Global Layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove chunk_num from Global Layer" />
+    <MESSAGE value="download pytorch.model.bin" />
+    <option name="LAST_COMMIT_MESSAGE" value="download pytorch.model.bin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -420,7 +438,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#30054#38852#0" expanded="false" />
+            <element signature="e#30060#38858#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -605,27 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="533" column="34" lean-forward="false" selection-start-line="533" selection-start-column="34" selection-end-line="533" selection-end-column="34" />
-          <folding>
-            <element signature="e#737#819#0" expanded="true" />
-            <element signature="e#3337#5944#0" expanded="false" />
-            <element signature="e#5964#6383#0" expanded="false" />
-            <element signature="e#6407#6669#0" expanded="false" />
-            <element signature="e#6690#6717#0" expanded="false" />
-            <element signature="e#6892#8763#0" expanded="false" />
-            <element signature="e#12844#14685#0" expanded="false" />
-            <element signature="e#13086#14243#0" expanded="false" />
-            <element signature="e#14727#15318#0" expanded="false" />
-            <element signature="e#15354#15902#0" expanded="false" />
-            <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#30054#38852#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/tokenization_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6531">
@@ -690,14 +687,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="958">
-          <caret line="155" column="81" lean-forward="true" selection-start-line="155" selection-start-column="81" selection-end-line="155" selection-end-column="81" />
+        <state relative-caret-position="643">
+          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#346#1317#0" expanded="false" />
             <element signature="e#1370#2423#0" expanded="false" />
             <element signature="e#2475#3530#0" expanded="false" />
             <element signature="e#3593#3774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="371" column="40" lean-forward="true" selection-start-line="371" selection-start-column="40" selection-end-line="371" selection-end-column="40" />
+          <folding>
+            <element signature="e#737#819#0" expanded="true" />
+            <element signature="e#3337#5944#0" expanded="false" />
+            <element signature="e#5964#6383#0" expanded="false" />
+            <element signature="e#6407#6669#0" expanded="false" />
+            <element signature="e#6690#6717#0" expanded="false" />
+            <element signature="e#6892#8763#0" expanded="false" />
+            <element signature="e#12844#14685#0" expanded="false" />
+            <element signature="e#13086#14243#0" expanded="false" />
+            <element signature="e#14727#15318#0" expanded="false" />
+            <element signature="e#15354#15902#0" expanded="false" />
+            <element signature="e#15938#16220#0" expanded="false" />
+            <element signature="e#30060#38858#0" expanded="false" />
           </folding>
         </state>
       </provider>
