@@ -378,7 +378,7 @@ class BertLayer(nn.Module):
     def forward(self, hidden_states, attention_mask=None, head_mask=None, encoder_hidden_states=None, encoder_attention_mask=None):
 
         hidden_chunks=hidden_states.split(self.chunk_num,dim=1)
-        if attention_mask!=None:
+        if attention_mask is not None:
             attention_mask_chunks=attention_mask.split(self.chunk_num,dim=1)
         else:
             attention_mask_chunks = [None for i in range(self.chunk_num)]
