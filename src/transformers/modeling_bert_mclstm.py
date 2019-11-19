@@ -357,7 +357,22 @@ class GlobalLSTMLayer(nn.Module):
         outputs=self.output(lstm_output,hidden_states)
         return outputs
 
-
+class GlobalMCLSTMLayer(nn.Module):
+    def __init__(self,config):
+        super(GlobalMCLSTMLayer, self).__init__()
+        self.lstm_layer=1
+        self.lstm=nn.LSTM(config.hidden_size,config.hidden_size,self.lstm_layer,bidirectional=True)
+        self.output = BertSelfOutput(config)
+    def forward(self, hidden_chunks):
+        hidden_states=torch.stack(hidden_chunks,dim=1) #b*c*l*d
+        ori_size=hidden_states.size()
+        hidden_states_t= hidden_states.transpose(1,2).view((ori_size[0]*ori_size[1],ori_size[2],ori_size[3])) # bl * c * d
+        lstm_output, (hn, cn)=self.lstm(hidden_states_t.transpose(0,1)) #lstm_output = c * bl * 2d
+        lstm_output=lstm_output.transpose(0,1).view(ori_size[0],ori_size[2],ori_size[1],ori_size[3],2).sum(dim=-1).squeeze(-1) #lstm_output = b * l * c * d
+        lstm_output=lstm_output.transpose(1,2) #b * c * l * d
+        outputs=self.output(lstm_output,hidden_states)
+        outputs=outputs.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3])
+        return outputs
 
 class BertLayer(nn.Module):
     def __init__(self, config):
@@ -371,12 +386,12 @@ class BertLayer(nn.Module):
 
         #self.chunk_num=config.chunk_num
         self.chunk_num=4
-        self.global_layer=GlobalLSTMLayer(config)
+        self.global_layer=GlobalMCLSTMLayer(config)
 
     def forward(self, hidden_states, attention_mask=None, head_mask=None, encoder_hidden_states=None, encoder_attention_mask=None):
 
-        print('debug by zhuoyu, hidden_states {}'.format(hidden_states.size()))
-        print('debug by zhuoyu, attention_mask {}'.format(attention_mask.size()))
+        #print('debug by zhuoyu, hidden_states {}'.format(hidden_states.size()))
+        #print('debug by zhuoyu, attention_mask {}'.format(attention_mask.size()))
         seq_len=hidden_states.size()[1]
         hidden_chunks=hidden_states.split(seq_len//self.chunk_num,dim=1)
         if attention_mask is not None:
@@ -387,8 +402,8 @@ class BertLayer(nn.Module):
         layer_output_chucks=[]
         output_chucks=[]
         for i,hidden_chunk in enumerate(hidden_chunks):
-            print('sub {} debug by zhuoyu, hidden_states {}'.format(i,hidden_chunk.size()))
-            print('sub {} debug by zhuoyu, attention_mask {}'.format(i,attention_mask_chunks[i].size()))
+            #print('sub {} debug by zhuoyu, hidden_states {}'.format(i,hidden_chunk.size()))
+            #print('sub {} debug by zhuoyu, attention_mask {}'.format(i,attention_mask_chunks[i].size()))
             self_attention_outputs = self.attention(hidden_chunk, attention_mask_chunks[i], head_mask)
             attention_output = self_attention_outputs[0]
             outputs = self_attention_outputs[1:]  # add self attentions if we output attention weights
