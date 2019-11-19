@@ -366,6 +366,7 @@ class GlobalMCLSTMLayer(nn.Module):
     def forward(self, hidden_chunks):
         hidden_states=torch.stack(hidden_chunks,dim=1) #b*c*l*d
         ori_size=hidden_states.size()
+        print('debug ori_size = {}'.format(ori_size))
         hidden_states_t= hidden_states.transpose(1,2).view((ori_size[0]*ori_size[1],ori_size[2],ori_size[3])) # bl * c * d
         lstm_output, (hn, cn)=self.lstm(hidden_states_t.transpose(0,1)) #lstm_output = c * bl * 2d
         lstm_output=lstm_output.transpose(0,1).view(ori_size[0],ori_size[2],ori_size[1],ori_size[3],2).sum(dim=-1).squeeze(-1) #lstm_output = b * l * c * d
