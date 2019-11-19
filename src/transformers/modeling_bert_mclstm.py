@@ -367,12 +367,12 @@ class GlobalMCLSTMLayer(nn.Module):
         hidden_states=torch.stack(hidden_chunks,dim=1) #b*c*l*d
         ori_size=hidden_states.size()
         #print('debug ori_size = {}'.format(ori_size))
-        hidden_states_t= hidden_states.transpose(1,2).view(ori_size[0]*ori_size[2],ori_size[1],ori_size[3]) # bl * c * d
-        lstm_output, (hn, cn)=self.lstm(hidden_states_t.transpose(0,1)) #lstm_output = c * bl * 2d
-        lstm_output=lstm_output.transpose(0,1).view(ori_size[0],ori_size[2],ori_size[1],ori_size[3],2).sum(dim=-1).squeeze(-1) #lstm_output = b * l * c * d
-        lstm_output=lstm_output.transpose(1,2) #b * c * l * d
-        outputs=self.output(lstm_output.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3])
-                            ,hidden_states.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3]))
+        hidden_states_t= hidden_states.transpose(1,2).contiguous().view(ori_size[0]*ori_size[2],ori_size[1],ori_size[3]).contiguous() # bl * c * d
+        lstm_output, (hn, cn)=self.lstm(hidden_states_t.transpose(0,1).contiguous()) #lstm_output = c * bl * 2d
+        lstm_output=lstm_output.transpose(0,1).view(ori_size[0],ori_size[2],ori_size[1],ori_size[3],2).contiguous().sum(dim=-1).squeeze(-1) #lstm_output = b * l * c * d
+        lstm_output=lstm_output.transpose(1,2).contiguous() #b * c * l * d
+        outputs=self.output(lstm_output.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3].contiguous())
+                            ,hidden_states.view(ori_size[0],ori_size[1]*ori_size[2],ori_size[3]).contiguous())
         return outputs
 
 class BertLayer(nn.Module):
