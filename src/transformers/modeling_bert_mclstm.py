@@ -414,7 +414,7 @@ class BertLayer(nn.Module):
             for j in range(self.chunk_num):
                 tmp_chunks.append(output_chucks[j][i])
             outputs.append(torch.cat(tmp_chunks,dim=1))
-        outputs = (layer_output,) + outputs
+        outputs = (layer_output,) + tuple(outputs)
 
         return outputs
 
