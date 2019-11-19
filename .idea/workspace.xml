@@ -17,8 +17,8 @@
       <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="365" column="43" lean-forward="true" selection-start-line="365" selection-start-column="43" selection-end-line="365" selection-end-column="43" />
+            <state relative-caret-position="383">
+              <caret line="355" column="64" lean-forward="false" selection-start-line="355" selection-start-column="64" selection-end-line="355" selection-end-column="64" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
@@ -30,7 +30,7 @@
                 <element signature="e#14727#15318#0" expanded="false" />
                 <element signature="e#15354#15902#0" expanded="false" />
                 <element signature="e#15938#16220#0" expanded="false" />
-                <element signature="e#30282#39080#0" expanded="false" />
+                <element signature="e#30283#39081#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -340,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574151191605</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix bug 1119.1">
+      <created>1574151284678</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574151284678</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -387,7 +394,8 @@
     <MESSAGE value="split seq_len//self.chunk_num" />
     <MESSAGE value="zeros" />
     <MESSAGE value="directly remove h0 and c0" />
-    <option name="LAST_COMMIT_MESSAGE" value="directly remove h0 and c0" />
+    <MESSAGE value="fix bug 1119.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug 1119.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -421,7 +429,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#30282#39080#0" expanded="false" />
+            <element signature="e#30283#39081#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="365" column="43" lean-forward="true" selection-start-line="365" selection-start-column="43" selection-end-line="365" selection-end-column="43" />
+        <state relative-caret-position="383">
+          <caret line="355" column="64" lean-forward="false" selection-start-line="355" selection-start-column="64" selection-end-line="355" selection-end-column="64" />
           <folding>
             <element signature="e#737#819#0" expanded="true" />
             <element signature="e#3337#5944#0" expanded="false" />
@@ -705,7 +713,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#30282#39080#0" expanded="false" />
+            <element signature="e#30283#39081#0" expanded="false" />
           </folding>
         </state>
       </provider>

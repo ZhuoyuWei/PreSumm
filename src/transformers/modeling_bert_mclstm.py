@@ -353,7 +353,7 @@ class GlobalLSTMLayer(nn.Module):
         hidden_states=torch.cat(hidden_chunks,dim=1)
         ori_size=hidden_states.size()
         lstm_output, (hn, cn)=self.lstm(hidden_states.transpose(0,1))
-        lstm_output=lstm_output.transpose(0,1).view(ori_size+[2]).sum(dim=-1).squeeze(-1)
+        lstm_output=lstm_output.transpose(0,1).view(ori_size+(2,)).sum(dim=-1).squeeze(-1)
         outputs=self.output(lstm_output,hidden_states)
         return outputs
 
