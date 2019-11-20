@@ -172,9 +172,9 @@ class BertEmbeddings(nn.Module):
         if token_type_ids is None:
             token_type_ids = torch.zeros(input_shape, dtype=torch.long, device=device)
 
-        print('debug embedding: input_ids {}'.format(input_ids.size()))
-        print('debug embedding: position_ids {}'.format(position_ids.size()))
-        print('debug embedding: token_type_ids {}'.format(token_type_ids.size()))
+        #print('debug embedding: input_ids {}'.format(input_ids.size()))
+        #print('debug embedding: position_ids {}'.format(position_ids.size()))
+        #print('debug embedding: token_type_ids {}'.format(token_type_ids.size()))
 
         if inputs_embeds is None:
             inputs_embeds = self.word_embeddings(input_ids)
