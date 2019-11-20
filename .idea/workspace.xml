@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/data_loader.py" afterPath="$PROJECT_DIR$/src/models/data_loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" afterPath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="176" column="9" lean-forward="false" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+            <state relative-caret-position="467">
+              <caret line="379" column="9" lean-forward="false" selection-start-line="379" selection-start-column="9" selection-end-line="379" selection-end-column="9" />
               <folding>
                 <element signature="e#3337#5944#0" expanded="false" />
                 <element signature="e#5964#6383#0" expanded="false" />
@@ -30,6 +30,7 @@
                 <element signature="e#14963#15554#0" expanded="false" />
                 <element signature="e#15590#16138#0" expanded="false" />
                 <element signature="e#16174#16456#0" expanded="false" />
+                <element signature="e#31780#40578#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_bert_lstm.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="train_bert_lstm.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+            <state relative-caret-position="252">
+              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -131,8 +132,8 @@
       <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="139" column="64" lean-forward="true" selection-start-line="139" selection-start-column="64" selection-end-line="139" selection-end-column="64" />
+            <state relative-caret-position="404">
+              <caret line="124" column="85" lean-forward="true" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#346#1317#0" expanded="false" />
@@ -155,7 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>accum_count</find>
       <find>max_sr</find>
       <find>build_tr</find>
       <find>chunk_n</find>
@@ -182,9 +182,10 @@
       <find>BertEmbeddings</find>
       <find>Batch(</find>
       <find>TextDataloader</find>
+      <find>seg</find>
       <find>self.embeddings</find>
       <find>self.bert</find>
-      <find>seg</find>
+      <find>debug o</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,9 +207,9 @@
         <option value="$PROJECT_DIR$/src/analyze/max_lengths.py" />
         <option value="$PROJECT_DIR$/src/train.py" />
         <option value="$PROJECT_DIR$/src/models/model_builder.py" />
-        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
         <option value="$PROJECT_DIR$/src/models/data_loader.py" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
+        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
       </list>
     </option>
   </component>
@@ -559,13 +560,20 @@
       <option name="project" value="LOCAL" />
       <updated>1574240830771</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix 1120.1">
+      <created>1574241125420</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1574241125420</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -589,7 +597,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try add None for output of xlnet" />
     <MESSAGE value="add bert lstm model" />
     <MESSAGE value="tmp change chunk_num" />
     <MESSAGE value="remove chunk_num from Global Layer" />
@@ -614,7 +621,8 @@
     <MESSAGE value="fix bug in mclstm 1120.2" />
     <MESSAGE value="max_pos and max_model_pos logic" />
     <MESSAGE value="debug 1120.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug 1120.1" />
+    <MESSAGE value="fix 1120.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 1120.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,7 +656,7 @@
             <element signature="e#14963#15554#0" expanded="false" />
             <element signature="e#15590#16138#0" expanded="false" />
             <element signature="e#16174#16456#0" expanded="false" />
-            <element signature="e#31778#40576#0" expanded="false" />
+            <element signature="e#31780#40578#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -684,7 +692,7 @@
             <element signature="e#14963#15554#0" expanded="false" />
             <element signature="e#15590#16138#0" expanded="false" />
             <element signature="e#16174#16456#0" expanded="false" />
-            <element signature="e#31778#40576#0" expanded="false" />
+            <element signature="e#31780#40578#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -947,28 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="139" column="64" lean-forward="true" selection-start-line="139" selection-start-column="64" selection-end-line="139" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#346#1317#0" expanded="false" />
-            <element signature="e#1370#2423#0" expanded="false" />
-            <element signature="e#2475#3530#0" expanded="false" />
-            <element signature="e#3593#3774#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -989,10 +975,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="124" column="85" lean-forward="true" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#346#1317#0" expanded="false" />
+            <element signature="e#1370#2423#0" expanded="false" />
+            <element signature="e#2475#3530#0" expanded="false" />
+            <element signature="e#3593#3774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="176" column="9" lean-forward="false" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        <state relative-caret-position="467">
+          <caret line="379" column="9" lean-forward="false" selection-start-line="379" selection-start-column="9" selection-end-line="379" selection-end-column="9" />
           <folding>
             <element signature="e#3337#5944#0" expanded="false" />
             <element signature="e#5964#6383#0" expanded="false" />
@@ -1003,7 +1003,16 @@
             <element signature="e#14963#15554#0" expanded="false" />
             <element signature="e#15590#16138#0" expanded="false" />
             <element signature="e#16174#16456#0" expanded="false" />
+            <element signature="e#31780#40578#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
