@@ -16,7 +16,7 @@ class Batch(object):
         rtn_data = [d + [pad_id] * (width - len(d)) for d in data]
         return rtn_data
 
-    def __init__(self, data=None, device=None, is_test=False):
+    def __init__(self, data=None, device=None, is_test=False, max_pos=-1):
         """Create a Batch from a list of examples."""
         if data is not None:
             self.batch_size = len(data)
@@ -26,16 +26,16 @@ class Batch(object):
             pre_clss = [x[3] for x in data]
             pre_src_sent_labels = [x[4] for x in data]
 
-            src = torch.tensor(self._pad(pre_src, 0))
-            tgt = torch.tensor(self._pad(pre_tgt, 0))
+            src = torch.tensor(self._pad(pre_src, 0,width=max_pos))
+            tgt = torch.tensor(self._pad(pre_tgt, 0,width=max_pos))
 
             segs = torch.tensor(self._pad(pre_segs, 0))
             mask_src = 1 - (src == 0)
             mask_tgt = 1 - (tgt == 0)
 
 
-            clss = torch.tensor(self._pad(pre_clss, -1))
-            src_sent_labels = torch.tensor(self._pad(pre_src_sent_labels, 0))
+            clss = torch.tensor(self._pad(pre_clss, -1,width=max_pos))
+            src_sent_labels = torch.tensor(self._pad(pre_src_sent_labels, 0,width=max_pos))
             mask_cls = 1 - (clss == -1)
             clss[clss == -1] = 0
             setattr(self, 'clss', clss.to(device))
@@ -55,6 +55,8 @@ class Batch(object):
                 setattr(self, 'src_str', src_str)
                 tgt_str = [x[-1] for x in data]
                 setattr(self, 'tgt_str', tgt_str)
+
+            self.max_pos=max_pos
 
     def __len__(self):
         return self.batch_size
@@ -179,6 +181,8 @@ class DataIterator(object):
         else:
             self.batch_size_fn = ext_batch_size_fn
 
+        self.max_pos=args.max_pos
+
     def data(self):
         if self.shuffle:
             random.shuffle(self.dataset)
@@ -281,7 +285,7 @@ class DataIterator(object):
                     continue
                 self.iterations += 1
                 self._iterations_this_epoch += 1
-                batch = Batch(minibatch, self.device, self.is_test)
+                batch = Batch(minibatch, self.device, self.is_test,self.max_pos)
 
                 yield batch
             return

@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analyze/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analyze/max_lengths.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" afterPath="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/data_loader.py" afterPath="$PROJECT_DIR$/src/models/data_loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/model_builder.py" afterPath="$PROJECT_DIR$/src/models/model_builder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train.py" afterPath="$PROJECT_DIR$/src/train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,13 +20,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
+            <state relative-caret-position="572">
+              <caret line="401" column="76" lean-forward="false" selection-start-line="401" selection-start-column="76" selection-end-line="401" selection-end-column="76" />
               <folding>
-                <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
                 <element signature="e#5964#6383#0" expanded="false" />
                 <element signature="e#6407#6669#0" expanded="false" />
@@ -30,18 +35,23 @@
                 <element signature="e#14727#15318#0" expanded="false" />
                 <element signature="e#15354#15902#0" expanded="false" />
                 <element signature="e#15938#16220#0" expanded="false" />
-                <element signature="e#31519#40317#0" expanded="false" />
+                <element signature="e#31542#40340#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tt2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tt2.py">
+      <file leaf-file-name="modeling_bert.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="404">
+              <caret line="480" column="23" lean-forward="true" selection-start-line="480" selection-start-column="23" selection-end-line="480" selection-end-column="23" />
+              <folding>
+                <element signature="e#3337#5944#0" expanded="false" />
+                <element signature="e#5964#6383#0" expanded="false" />
+                <element signature="e#6407#6669#0" expanded="false" />
+                <element signature="e#6892#8763#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,9 +59,94 @@
       <file leaf-file-name="configuration_bert.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1533">
-              <caret line="80" column="23" lean-forward="false" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+            <state relative-caret-position="808">
+              <caret line="108" column="17" lean-forward="true" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modeling_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transformers/modeling_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="147" column="30" lean-forward="true" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_extractive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+              <folding>
+                <element signature="e#4130#5118#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_loader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="36" column="70" lean-forward="true" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#2085#3114#0" expanded="false" />
+                <element signature="e#9317#12443#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+              <folding>
+                <element signature="e#57#88#0" expanded="true" />
+                <element signature="e#6137#6934#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_bert_lstm.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="199" column="74" lean-forward="false" selection-start-line="199" selection-start-column="64" selection-end-line="199" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#346#1317#0" expanded="false" />
+                <element signature="e#1370#2423#0" expanded="false" />
+                <element signature="e#2475#3530#0" expanded="false" />
+                <element signature="e#3593#3774#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,36 +162,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xlnet</find>
-      <find>xlnetmodel</find>
-      <find>forward</find>
-      <find>output_past</find>
-      <find>BertConfig</find>
-      <find>BertAttention</find>
-      <find>BertOutput</find>
-      <find>BertSelfOutput</find>
-      <find>BertSelfAttention</find>
-      <find>BertLSTM</find>
-      <find>model_name ==</find>
-      <find>chunk_num</find>
-      <find>BERT_PRETRAINED_MODEL_ARCHIVE_MAP</find>
-      <find>from</find>
-      <find>from_pr</find>
-      <find>from_pre</find>
-      <find>TOKENIZER_CONFIG_FILE</find>
-      <find>BERTToken</find>
-      <find>!=</find>
-      <find>BertLayer</find>
-      <find>BertEncoder</find>
-      <find>BertLSTMModel</find>
-      <find>ExtSummarizer</find>
-      <find>build_trainer</find>
-      <find>train</find>
-      <find>self.model</find>
-      <find>data_loader</find>
-      <find>from_pretrained</find>
-      <find>BERTLayer</find>
       <find>h0</find>
+      <find>_gradient_accumulation</find>
+      <find>grad_accum_count</find>
+      <find>build_</find>
+      <find>accum_count</find>
+      <find>max_sr</find>
+      <find>build_tr</find>
+      <find>chunk_n</find>
+      <find>data_builder</find>
+      <find>format_to_</find>
+      <find>max</find>
+      <find>DataLoader</find>
+      <find>build_trainer</find>
+      <find>min_src_ntokens_per_sent</find>
+      <find>Batch</find>
+      <find>Trainer</find>
+      <find>max_po</find>
+      <find>large</find>
+      <find>train_ext(</find>
+      <find>map_path</find>
+      <find>sep_vid</find>
+      <find>ExtSummarizer</find>
+      <find>DataIterator</find>
+      <find>max_pos</find>
+      <find>BertModel</find>
+      <find>BERTModel</find>
+      <find>4</find>
+      <find>Batch(</find>
+      <find>TextDataloader</find>
+      <find>baseline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,22 +203,24 @@
         <option value="$PROJECT_DIR$/scripts/evaluate.sh" />
         <option value="$PROJECT_DIR$/src/distributed.py" />
         <option value="$PROJECT_DIR$/src/train_extractive.py" />
-        <option value="$PROJECT_DIR$/src/train.py" />
         <option value="$PROJECT_DIR$/scripts/train_simple.sh" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_xlnet.py" />
         <option value="$PROJECT_DIR$/scripts/train_xlnet.sh.py" />
         <option value="$PROJECT_DIR$/src/tt.py" />
         <option value="$PROJECT_DIR$/src/transformers/__init__.py" />
-        <option value="$PROJECT_DIR$/src/models/model_builder.py" />
         <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh.py" />
-        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
         <option value="$PROJECT_DIR$/src/tt2.py" />
+        <option value="$PROJECT_DIR$/src/analyze/max_lengths.py" />
+        <option value="$PROJECT_DIR$/src/train.py" />
+        <option value="$PROJECT_DIR$/src/models/model_builder.py" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
+        <option value="$PROJECT_DIR$/src/models/data_loader.py" />
+        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
@@ -157,12 +254,30 @@
             <path>
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="analyze" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="transformers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,13 +551,20 @@
       <option name="project" value="LOCAL" />
       <updated>1574215387677</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix bug in mclstm 1120.2">
+      <created>1574215503489</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1574215503489</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -466,7 +588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add model_name and pretrain_name" />
     <MESSAGE value="hot fix XLNet output|hidden states and output layer" />
     <MESSAGE value="debug at 11.18" />
     <MESSAGE value="try add None for output of xlnet" />
@@ -491,7 +612,8 @@
     <MESSAGE value="fix bug in mclstm 1119.4" />
     <MESSAGE value="fix bug in mclstm 1119.5" />
     <MESSAGE value="fix bug in mclstm 1120.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1120.1" />
+    <MESSAGE value="fix bug in mclstm 1120.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1120.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,7 +637,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#737#819#0" expanded="true" />
+            <element signature="e#737#819#0" expanded="false" />
             <element signature="e#3337#5944#0" expanded="false" />
             <element signature="e#5964#6383#0" expanded="false" />
             <element signature="e#6407#6669#0" expanded="false" />
@@ -525,7 +647,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#31519#40317#0" expanded="false" />
+            <element signature="e#31542#40340#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,7 +673,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#737#819#0" expanded="true" />
+            <element signature="e#737#819#0" expanded="false" />
             <element signature="e#3337#5944#0" expanded="false" />
             <element signature="e#5964#6383#0" expanded="false" />
             <element signature="e#6407#6669#0" expanded="false" />
@@ -561,7 +683,7 @@
             <element signature="e#14727#15318#0" expanded="false" />
             <element signature="e#15354#15902#0" expanded="false" />
             <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#31519#40317#0" expanded="false" />
+            <element signature="e#31542#40340#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -591,6 +713,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,6 +777,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="111" column="32" lean-forward="false" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -720,24 +837,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
+    <entry file="file://$PROJECT_DIR$/src/tt2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="63">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-313451744/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="132" column="4" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prepro/data_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="248" column="19" lean-forward="true" selection-start-line="248" selection-start-column="19" selection-end-line="248" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#1288#2922#0" expanded="false" />
+            <element signature="e#2949#4602#0" expanded="false" />
+            <element signature="e#5307#6747#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyze/max_lengths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1013">
+          <caret line="102" column="12" lean-forward="false" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding>
+            <element signature="e#6073#7026#0" expanded="false" />
+            <element signature="e#7107#11437#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="147" column="30" lean-forward="true" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+          <folding>
+            <element signature="e#4130#5118#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1055">
-          <caret line="230" column="16" lean-forward="false" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
+        <state relative-caret-position="404">
+          <caret line="480" column="23" lean-forward="true" selection-start-line="480" selection-start-column="23" selection-end-line="480" selection-end-column="23" />
+          <folding>
+            <element signature="e#3337#5944#0" expanded="false" />
+            <element signature="e#5964#6383#0" expanded="false" />
+            <element signature="e#6407#6669#0" expanded="false" />
+            <element signature="e#6892#8763#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="108" column="17" lean-forward="true" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="401" column="76" lean-forward="false" selection-start-line="401" selection-start-column="76" selection-end-line="401" selection-end-column="76" />
+          <folding>
+            <element signature="e#3337#5944#0" expanded="false" />
+            <element signature="e#5964#6383#0" expanded="false" />
+            <element signature="e#6407#6669#0" expanded="false" />
+            <element signature="e#6690#6717#0" expanded="false" />
+            <element signature="e#6892#8763#0" expanded="false" />
+            <element signature="e#13086#14243#0" expanded="false" />
+            <element signature="e#14727#15318#0" expanded="false" />
+            <element signature="e#15354#15902#0" expanded="false" />
+            <element signature="e#15938#16220#0" expanded="false" />
+            <element signature="e#31542#40340#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="36" column="70" lean-forward="true" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#2085#3114#0" expanded="false" />
+            <element signature="e#9317#12443#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="19" />
+        <state relative-caret-position="731">
+          <caret line="199" column="74" lean-forward="false" selection-start-line="199" selection-start-column="64" selection-end-line="199" selection-end-column="77" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#346#1317#0" expanded="false" />
@@ -748,81 +987,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
+    <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="235" column="33" lean-forward="false" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="319">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#1983#3012#0" expanded="false" />
+            <element signature="e#57#88#0" expanded="true" />
+            <element signature="e#6137#6934#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/trainer.py">
+    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret line="106" column="30" lean-forward="false" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="353" column="32" lean-forward="false" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
-          <folding>
-            <element signature="e#736#844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tt2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="294">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="80" column="23" lean-forward="false" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
-          <folding>
-            <element signature="e#737#819#0" expanded="true" />
-            <element signature="e#3337#5944#0" expanded="false" />
-            <element signature="e#5964#6383#0" expanded="false" />
-            <element signature="e#6407#6669#0" expanded="false" />
-            <element signature="e#6690#6717#0" expanded="false" />
-            <element signature="e#6892#8763#0" expanded="false" />
-            <element signature="e#13086#14243#0" expanded="false" />
-            <element signature="e#14727#15318#0" expanded="false" />
-            <element signature="e#15354#15902#0" expanded="false" />
-            <element signature="e#15938#16220#0" expanded="false" />
-            <element signature="e#31519#40317#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

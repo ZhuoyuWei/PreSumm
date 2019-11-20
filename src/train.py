@@ -39,6 +39,7 @@ if __name__ == '__main__':
     parser.add_argument("-test_batch_size", default=200, type=int)
 
     parser.add_argument("-max_pos", default=512, type=int)
+    parser.add_argument("-max_model_pos", default=512, type=int)
     parser.add_argument("-use_interval", type=str2bool, nargs='?',const=True,default=True)
     parser.add_argument("-large", type=str2bool, nargs='?',const=True,default=False)
     parser.add_argument("-load_from_extractive", default='', type=str)
@@ -111,6 +112,9 @@ if __name__ == '__main__':
     parser.add_argument("-dist_init_method", default='tcp://localhost:10000', type=str)
     parser.add_argument("-model_name",default='bert-base-uncased',type=str)
     parser.add_argument("-pretrained_name",default='bert-base-uncased',type=str)
+
+    #add by zhuoyu
+    parser.add_argument("-bert_baseline",default=1,type=int)
 
     args = parser.parse_args()
     args.gpu_ranks = [int(i) for i in range(len(args.visible_gpus.split(',')))]
