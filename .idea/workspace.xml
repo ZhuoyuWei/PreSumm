@@ -17,8 +17,8 @@
       <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="374" column="97" lean-forward="true" selection-start-line="374" selection-start-column="97" selection-end-line="374" selection-end-column="97" />
+            <state relative-caret-position="560">
+              <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3337#5944#0" expanded="false" />
@@ -429,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574153949082</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix bug in mclstm 1120.1">
+      <created>1574215387677</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574215387677</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -459,7 +466,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change api for new BERT model" />
     <MESSAGE value="add model_name and pretrain_name" />
     <MESSAGE value="hot fix XLNet output|hidden states and output layer" />
     <MESSAGE value="debug at 11.18" />
@@ -484,7 +490,8 @@
     <MESSAGE value="fix bug in mclstm 1119.3:.contiguous()" />
     <MESSAGE value="fix bug in mclstm 1119.4" />
     <MESSAGE value="fix bug in mclstm 1119.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1119.5" />
+    <MESSAGE value="fix bug in mclstm 1120.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in mclstm 1120.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -801,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="374" column="97" lean-forward="true" selection-start-line="374" selection-start-column="97" selection-end-line="374" selection-end-column="97" />
+        <state relative-caret-position="560">
+          <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
           <folding>
             <element signature="e#737#819#0" expanded="true" />
             <element signature="e#3337#5944#0" expanded="false" />
