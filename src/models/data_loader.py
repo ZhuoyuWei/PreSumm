@@ -96,7 +96,7 @@ def load_dataset(args, corpus_type, shuffle):
         yield _lazy_dataset_loader(pt, corpus_type)
 
 
-def abs_batch_size_fn(new, count):
+def abs_batch_size_fn(new, count,max_pos=-1):
     src, tgt = new[0], new[1]
     global max_n_sents, max_n_tokens, max_size
     if count == 1:
@@ -111,7 +111,7 @@ def abs_batch_size_fn(new, count):
     return src_elements
 
 
-def ext_batch_size_fn(new, count):
+def ext_batch_size_fn(new, count,max_pos=-1):
     if (len(new) == 4):
         pass
     src, labels = new[0], new[4]
@@ -125,6 +125,18 @@ def ext_batch_size_fn(new, count):
     src_elements = count * max_size
     return src_elements
 
+def ext_fix_batch_size_fn(new,count,max_pos):
+    if (len(new) == 4):
+        pass
+    global max_n_sents, max_n_tokens, max_size
+    if count == 1:
+        max_size = 0
+        max_n_sents = 0
+        max_n_tokens = 0
+    max_n_sents = max(max_n_sents, max_pos)
+    max_size = max(max_size, max_n_sents)
+    src_elements = count * max_size
+    return src_elements
 
 class Dataloader(object):
     def __init__(self, args, datasets,  batch_size,
@@ -179,7 +191,8 @@ class DataIterator(object):
         if (self.args.task == 'abs'):
             self.batch_size_fn = abs_batch_size_fn
         else:
-            self.batch_size_fn = ext_batch_size_fn
+            #self.batch_size_fn = ext_batch_size_fn
+            self.batch_size_fn = ext_fix_batch_size_fn
 
         self.max_pos=args.max_pos
 
@@ -229,13 +242,13 @@ class DataIterator(object):
             if(ex is None):
                 continue
             minibatch.append(ex)
-            size_so_far = self.batch_size_fn(ex, len(minibatch))
+            size_so_far = self.batch_size_fn(ex, len(minibatch),self.max_pos)
             if size_so_far == batch_size:
                 yield minibatch
                 minibatch, size_so_far = [], 0
             elif size_so_far > batch_size:
                 yield minibatch[:-1]
-                minibatch, size_so_far = minibatch[-1:], self.batch_size_fn(ex, 1)
+                minibatch, size_so_far = minibatch[-1:], self.batch_size_fn(ex, 1,self.max_pos)
         if minibatch:
             yield minibatch
 
@@ -244,21 +257,21 @@ class DataIterator(object):
         minibatch, size_so_far = [], 0
         for ex in data:
             minibatch.append(ex)
-            size_so_far = self.batch_size_fn(ex, len(minibatch))
+            size_so_far = self.batch_size_fn(ex, len(minibatch),self.max_pos)
             if size_so_far == batch_size:
                 yield minibatch
                 minibatch, size_so_far = [], 0
             elif size_so_far > batch_size:
                 yield minibatch[:-1]
-                minibatch, size_so_far = minibatch[-1:], self.batch_size_fn(ex, 1)
+                minibatch, size_so_far = minibatch[-1:], self.batch_size_fn(ex, 1,self.max_pos)
         if minibatch:
             yield minibatch
 
     def create_batches(self):
         """ Create batches """
         data = self.data()
-        for buffer in self.batch_buffer(data, self.batch_size * 300):
-
+        for buffer in self.batch_buffer(data, self.batch_size * 300): #300 batches
+            #buffer is 300*batches
             if (self.args.task == 'abs'):
                 p_batch = sorted(buffer, key=lambda x: len(x[2]))
                 p_batch = sorted(p_batch, key=lambda x: len(x[1]))
