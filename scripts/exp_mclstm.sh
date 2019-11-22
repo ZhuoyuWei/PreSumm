@@ -16,7 +16,7 @@ python train.py -task ext -mode train -bert_data_path $BERT_DATA_PATH \
 
 WORDDIR=/data/zhuoyu/summarization
 
-CUDA_VISIBLE_DEVICES=5 python train.py -task ext -mode validate -batch_size 2000 -test_batch_size 2000 \
+CUDA_VISIBLE_DEVICES=1 python train.py -task ext -mode validate -batch_size 2000 -test_batch_size 2000 \
 -bert_data_path $BERT_DATA_PATH \
 -log_file $BERT_OUTPUT_PATH/logs/ext_bert_cnndm.evaluate \
 -model_path $BERT_OUTPUT_PATH \

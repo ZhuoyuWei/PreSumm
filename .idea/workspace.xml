@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="fix bug 3">
+    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/exp_mclstm.sh" afterPath="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" afterPath="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="371">
@@ -34,6 +35,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="exp_mclstm_debug.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="71" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exp_mclstm.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -45,7 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>4</find>
       <find>Batch</find>
       <find>max_pos</find>
       <find>BertEmbeddings</find>
@@ -73,8 +93,9 @@
       <find>lstm</find>
       <find>BertConfig</find>
       <find>bertconfig</find>
-      <find>lstm_l</find>
       <find>WORDDIR</find>
+      <find>lstm_l</find>
+      <find>ext_bert_cnndm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,15 +122,16 @@
         <option value="$PROJECT_DIR$/src/models/model_builder.py" />
         <option value="$PROJECT_DIR$/scripts/exp_mclstm.py" />
         <option value="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh.py" />
-        <option value="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
         <option value="$PROJECT_DIR$/src/others/logging.py" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
+        <option value="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" />
+        <option value="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-140" />
-    <option name="y" value="-13" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
@@ -148,23 +170,6 @@
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="transformers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -522,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574407406949</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="getattr(module,'weight_ih_l{}'.format(i)).data.zero_()">
+      <created>1574408027977</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1574408027977</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -552,7 +564,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zeros" />
     <MESSAGE value="directly remove h0 and c0" />
     <MESSAGE value="fix bug 1119.1" />
     <MESSAGE value="fix bug 1119.2" />
@@ -577,7 +588,8 @@
     <MESSAGE value="fix bug 1" />
     <MESSAGE value="fix bug 2" />
     <MESSAGE value="fix bug 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug 3" />
+    <MESSAGE value="getattr(module,'weight_ih_l{}'.format(i)).data.zero_()" />
+    <option name="LAST_COMMIT_MESSAGE" value="getattr(module,'weight_ih_l{}'.format(i)).data.zero_()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,22 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/others/logging.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -1013,6 +1009,22 @@
             <element signature="e#14974#15565#0" expanded="false" />
             <element signature="e#15601#16149#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="71" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
