@@ -90,6 +90,7 @@ class BertLSTMConfig(PretrainedConfig):
                  initializer_range=0.02,
                  layer_norm_eps=1e-12,
                  lstm_layer=1,
+                 gobal_layer_type='mclstm',
                  **kwargs):
         super(BertLSTMConfig, self).__init__(**kwargs)
         if isinstance(vocab_size_or_config_json_file, str) or (sys.version_info[0] == 2
@@ -112,6 +113,7 @@ class BertLSTMConfig(PretrainedConfig):
             self.initializer_range = initializer_range
             self.layer_norm_eps = layer_norm_eps
             self.lstm_layer=lstm_layer
+            self.gobal_layer_type=gobal_layer_type
         else:
             raise ValueError("First argument must be either a vocabulary size (int)"
                              " or the path to a pretrained model config file (str)")

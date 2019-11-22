@@ -116,6 +116,7 @@ if __name__ == '__main__':
     #add by zhuoyu
     parser.add_argument("-bert_baseline",default=1,type=int)
     parser.add_argument("-lstm_layer",default=1,type=int)
+    parser.add_argument("-gobal_layer_type",default='mclstm',type=str)
 
     args = parser.parse_args()
     args.gpu_ranks = [int(i) for i in range(len(args.visible_gpus.split(',')))]

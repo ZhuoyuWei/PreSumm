@@ -343,7 +343,8 @@ class GlobalLayer(nn.Module):
 
     def forward(self, hidden_chunks):
         hidden_states=torch.cat(hidden_chunks,dim=1)
-        outputs=self.output(hidden_states,hidden_states)
+        #outputs=self.output(hidden_states,hidden_states)
+        outputs=hidden_states
         return outputs
 
 
@@ -392,7 +393,12 @@ class BertLayer(nn.Module):
 
         #self.chunk_num=config.chunk_num
         self.chunk_size=config.max_position_embeddings
-        self.global_layer=GlobalMCLSTMLayer(config)
+        if config.gobal_layer_type == 'mclstm':
+            self.global_layer=GlobalMCLSTMLayer(config)
+        elif config.gobal_layer_type == 'lstm':
+            self.global_layer=GlobalLSTMLayer(config)
+        else:
+            self.global_layer=GlobalLayer(config)
 
     def forward(self, hidden_states, attention_mask=None, head_mask=None, encoder_hidden_states=None, encoder_attention_mask=None):
 
