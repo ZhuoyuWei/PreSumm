@@ -17,8 +17,8 @@
       <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="342" column="12" lean-forward="false" selection-start-line="342" selection-start-column="12" selection-end-line="342" selection-end-column="12" />
+            <state relative-caret-position="614">
+              <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
               <folding>
                 <element signature="e#737#819#0" expanded="true" />
                 <element signature="e#3348#5955#0" expanded="false" />
@@ -304,13 +304,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00001" summary="replace pytorch_transformer from lib to transformers from code">
-      <created>1573797250494</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1573797250494</updated>
     </task>
     <task id="LOCAL-00002" summary="add dist_init_method into args">
       <created>1573798791804</created>
@@ -648,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574413995138</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fix bug 7 1122">
+      <created>1574414559869</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1574414559873</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -678,7 +678,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debug mclstm 1119.1" />
     <MESSAGE value="fix bug in mclstm 1119.1" />
     <MESSAGE value="fix bug in mclstm 1119.2" />
     <MESSAGE value="fix bug in mclstm 1119.3:.contiguous()" />
@@ -703,7 +702,8 @@
     <MESSAGE value="add scripts for two baseline" />
     <MESSAGE value=" -report_rouge=False" />
     <MESSAGE value="fix bug 6 1122" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug 6 1122" />
+    <MESSAGE value="fix bug 7 1122" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug 7 1122" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,8 +738,8 @@
             <element signature="e#13333#14490#0" expanded="false" />
             <element signature="e#14974#15565#0" expanded="false" />
             <element signature="e#15601#16149#0" expanded="false" />
-            <element signature="e#16185#16512#0" expanded="false" />
-            <element signature="e#32468#41266#0" expanded="false" />
+            <element signature="e#16185#16468#0" expanded="false" />
+            <element signature="e#32424#41222#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,8 +774,8 @@
             <element signature="e#13333#14490#0" expanded="false" />
             <element signature="e#14974#15565#0" expanded="false" />
             <element signature="e#15601#16149#0" expanded="false" />
-            <element signature="e#16185#16512#0" expanded="false" />
-            <element signature="e#32468#41266#0" expanded="false" />
+            <element signature="e#16185#16468#0" expanded="false" />
+            <element signature="e#32424#41222#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1140,8 +1140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="342" column="12" lean-forward="false" selection-start-line="342" selection-start-column="12" selection-end-line="342" selection-end-column="12" />
+        <state relative-caret-position="614">
+          <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
           <folding>
             <element signature="e#737#819#0" expanded="true" />
             <element signature="e#3348#5955#0" expanded="false" />
