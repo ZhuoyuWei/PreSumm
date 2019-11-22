@@ -17,7 +17,7 @@ def init_logger(log_file=None, log_file_level=logging.NOTSET):
     logger.handlers = [console_handler]
 
     if log_file and log_file != '':
-        log_path=os.path.pardir(log_file)
+        log_path=os.path.dirname(log_file)
         if not os.path.exists(log_path):
             os.makedirs(log_path)
         file_handler = logging.FileHandler(log_file)
