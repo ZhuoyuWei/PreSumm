@@ -4,7 +4,7 @@ cd ../src
 
 BERT_DATA_PATH=/data/zhuoyu/summarization/cnndm_data/bert_data_cnndm_final/cnndm
 BERT_OUTPUT_PATH=/data/zhuoyu/summarization/workspace/run_training_lstm
-PRETRAINED_PATH=/data/zhuoyu/models/bertbase_lstm
+PRETRAINED_PATH=/data/zhuoyu/summarization/models/bertbase_lstm
 
 mkdir $BERT_OUTPUT_PATH
 mkdir $BERT_OUTPUT_PATH/logs
