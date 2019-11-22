@@ -171,9 +171,10 @@ class ExtSummarizer(nn.Module):
                                      num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads, intermediate_size=args.ext_ff_size)
                 self.bert.model = RobertaModel(roberta_config)
             elif args.model_name == 'bert_lstm':
-                from transformers import BertLSTMModel,BertConfig
-                bert_config = BertConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
-                                     num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads, intermediate_size=args.ext_ff_size)
+                from transformers import BertLSTMModel,BertLSTMConfig
+                bert_config = BertLSTMConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
+                                     num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads,
+                                             intermediate_size=args.ext_ff_size, lstm_layer=args.lstm_layer)
                 self.bert.model = BertLSTMModel(bert_config)
 
             self.ext_layer = Classifier(self.bert.model.config.hidden_size)

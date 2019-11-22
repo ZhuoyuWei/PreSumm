@@ -27,7 +27,7 @@ from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
 from .modeling_utils import PreTrainedModel, prune_linear_layer
-from .configuration_bert import BertConfig
+from .configuration_bert_mclstm import BertLSTMConfig
 from .file_utils import add_start_docstrings
 
 logger = logging.getLogger(__name__)
@@ -350,7 +350,7 @@ class GlobalLayer(nn.Module):
 class GlobalLSTMLayer(nn.Module):
     def __init__(self,config):
         super(GlobalLSTMLayer, self).__init__()
-        self.lstm_layer=1
+        self.lstm_layer=config.lstm_layer
         self.lstm=nn.LSTM(config.hidden_size,config.hidden_size,self.lstm_layer,bidirectional=True)
         self.output = BertSelfOutput(config)
     def forward(self, hidden_chunks):
@@ -364,7 +364,7 @@ class GlobalLSTMLayer(nn.Module):
 class GlobalMCLSTMLayer(nn.Module):
     def __init__(self,config):
         super(GlobalMCLSTMLayer, self).__init__()
-        self.lstm_layer=1
+        self.lstm_layer = config.lstm_layer
         self.lstm=nn.LSTM(config.hidden_size,config.hidden_size,self.lstm_layer,bidirectional=True)
         self.output = BertSelfOutput(config)
     def forward(self, hidden_chunks):
@@ -555,11 +555,11 @@ class BertPreTrainingHeads(nn.Module):
         return prediction_scores, seq_relationship_score
 
 
-class BertPreTrainedModel(PreTrainedModel):
+class BertLSTMPreTrainedModel(PreTrainedModel):
     """ An abstract class to handle weights initialization and
         a simple interface for dowloading and loading pretrained models.
     """
-    config_class = BertConfig
+    config_class = BertLSTMConfig
     pretrained_model_archive_map = BERT_PRETRAINED_MODEL_ARCHIVE_MAP
     load_tf_weights = load_tf_weights_in_bert
     base_model_prefix = "bert"
@@ -573,6 +573,12 @@ class BertPreTrainedModel(PreTrainedModel):
         elif isinstance(module, BertLayerNorm):
             module.bias.data.zero_()
             module.weight.data.fill_(1.0)
+        elif isinstance(module,nn.LSTM):
+            for i in range(module.num_layers):
+                module.weight_ih_l[i].data.zero_()
+                module.weight_hh_l[i].data.zero_()
+                module.bias_ih_l[i].data.zero_()
+                module.bias_hh_l[i].data.zero_()
         if isinstance(module, nn.Linear) and module.bias is not None:
             module.bias.data.zero_()
 
