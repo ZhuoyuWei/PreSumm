@@ -339,6 +339,7 @@ class BertOutput(nn.Module):
 class GlobalLayer(nn.Module):
     def __init__(self,config):
         #self.chunk_num=config.chunk_num
+        super(GlobalLayer, self).__init__()
         self.output=BertSelfOutput(config)
 
 
