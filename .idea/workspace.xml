@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/exp_mclstm.sh" afterPath="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" afterPath="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,22 +35,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exp_mclstm_debug.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exp_mclstm_debug.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+            <state relative-caret-position="273">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="115" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exp_mclstm.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="exp_mclstm.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="133" column="20" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#346#1317#0" expanded="false" />
+                <element signature="e#1370#2423#0" expanded="false" />
+                <element signature="e#2475#3530#0" expanded="false" />
+                <element signature="e#3593#3774#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,13 +140,13 @@
         <option value="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh.py" />
         <option value="$PROJECT_DIR$/src/others/logging.py" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
-        <option value="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
         <option value="$PROJECT_DIR$/scripts/exp_mclstm_debug.sh" />
+        <option value="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
@@ -169,6 +186,17 @@
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -540,13 +568,20 @@
       <option name="project" value="LOCAL" />
       <updated>1574408348941</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fix bug 4">
+      <created>1574408633605</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1574408633605</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -570,7 +605,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="directly remove h0 and c0" />
     <MESSAGE value="fix bug 1119.1" />
     <MESSAGE value="fix bug 1119.2" />
     <MESSAGE value="fix bug 1119.3" />
@@ -595,7 +629,8 @@
     <MESSAGE value="fix bug 2" />
     <MESSAGE value="getattr(module,'weight_ih_l{}'.format(i)).data.zero_()" />
     <MESSAGE value="fix bug 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug 3" />
+    <MESSAGE value="fix bug 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,20 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="173" column="58" lean-forward="false" selection-start-line="173" selection-start-column="55" selection-end-line="173" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#346#1317#0" expanded="false" />
-            <element signature="e#1370#2423#0" expanded="false" />
-            <element signature="e#2475#3530#0" expanded="false" />
-            <element signature="e#3593#3774#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert_mclstm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1018,18 +1039,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
+    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="485">
+          <caret line="133" column="20" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#346#1317#0" expanded="false" />
+            <element signature="e#1370#2423#0" expanded="false" />
+            <element signature="e#2475#3530#0" expanded="false" />
+            <element signature="e#3593#3774#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        <state relative-caret-position="273">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
           <folding />
         </state>
       </provider>

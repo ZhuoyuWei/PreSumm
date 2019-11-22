@@ -23,4 +23,4 @@ CUDA_VISIBLE_DEVICES=1 python train.py -task ext -mode validate -batch_size 2000
 -sep_optim true -use_interval true -visible_gpus 1 \
 -max_pos 512 -max_length 200 -alpha 0.95 -min_length 50 \
 -result_path $BERT_OUTPUT_PATH/logs/exp_bert_cnndm.res \
--test_all true
+-test_all true -model_name bert_lstm -pretrained_name /data/zhuoyu/summarization/models/bertbase -max_model_pos=128
