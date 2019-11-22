@@ -575,10 +575,10 @@ class BertLSTMPreTrainedModel(PreTrainedModel):
             module.weight.data.fill_(1.0)
         elif isinstance(module,nn.LSTM):
             for i in range(module.num_layers):
-                module.weight_ih_l[i].data.zero_()
-                module.weight_hh_l[i].data.zero_()
-                module.bias_ih_l[i].data.zero_()
-                module.bias_hh_l[i].data.zero_()
+                getattr(module,'weight_ih_l{}'.format(i)).data.zero_()
+                getattr(module,'weight_hh_l{}'.format(i)).data.zero_()
+                getattr(module,'bias_ih_l{}'.format(i)).data.zero_()
+                getattr(module,'bias_hh_l{}'.format(i)).data.zero_()
         if isinstance(module, nn.Linear) and module.bias is not None:
             module.bias.data.zero_()
 
