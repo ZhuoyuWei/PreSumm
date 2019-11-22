@@ -660,7 +660,7 @@ BERT_INPUTS_DOCSTRING = r"""
 
 @add_start_docstrings("The bare Bert Model transformer outputting raw hidden-states without any specific head on top.",
                       BERT_START_DOCSTRING, BERT_INPUTS_DOCSTRING)
-class BertLSTMModel(BertPreTrainedModel):
+class BertLSTMModel(BertLSTMPreTrainedModel):
     r"""
     Outputs: `Tuple` comprising various elements depending on the configuration (config) and inputs:
         **last_hidden_state**: ``torch.FloatTensor`` of shape ``(batch_size, sequence_length, hidden_size)``
