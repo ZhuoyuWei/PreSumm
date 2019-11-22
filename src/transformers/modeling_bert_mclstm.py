@@ -815,7 +815,7 @@ class BertLSTMModel(BertLSTMPreTrainedModel):
                        a `masked language modeling` head and a `next sentence prediction (classification)` head. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForPreTraining(BertPreTrainedModel):
+class BertLSTMForPreTraining(BertLSTMPreTrainedModel):
     r"""
         **masked_lm_labels**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size, sequence_length)``:
             Labels for computing the masked language modeling loss.
@@ -891,7 +891,7 @@ class BertLSTMForPreTraining(BertPreTrainedModel):
 @add_start_docstrings("""Bert Model with a `language modeling` head on top. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForMaskedLM(BertPreTrainedModel):
+class BertLSTMForMaskedLM(BertLSTMPreTrainedModel):
     r"""
         **masked_lm_labels**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size, sequence_length)``:
             Labels for computing the masked language modeling loss.
@@ -981,7 +981,7 @@ class BertLSTMForMaskedLM(BertPreTrainedModel):
 @add_start_docstrings("""Bert Model with a `next sentence prediction (classification)` head on top. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForNextSentencePrediction(BertPreTrainedModel):
+class BertLSTMForNextSentencePrediction(BertLSTMPreTrainedModel):
     r"""
         **next_sentence_label**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size,)``:
             Labels for computing the next sequence prediction (classification) loss. Input should be a sequence pair (see ``input_ids`` docstring)
@@ -1046,7 +1046,7 @@ class BertLSTMForNextSentencePrediction(BertPreTrainedModel):
                       the pooled output) e.g. for GLUE tasks. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForSequenceClassification(BertPreTrainedModel):
+class BertLSTMForSequenceClassification(BertLSTMPreTrainedModel):
     r"""
         **labels**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size,)``:
             Labels for computing the sequence classification/regression loss.
@@ -1121,7 +1121,7 @@ class BertLSTMForSequenceClassification(BertPreTrainedModel):
                       the pooled output and a softmax) e.g. for RocStories/SWAG tasks. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForMultipleChoice(BertPreTrainedModel):
+class BertLSTMForMultipleChoice(BertLSTMPreTrainedModel):
     r"""
         **labels**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size,)``:
             Labels for computing the multiple choice classification loss.
@@ -1198,7 +1198,7 @@ class BertLSTMForMultipleChoice(BertPreTrainedModel):
                       the hidden-states output) e.g. for Named-Entity-Recognition (NER) tasks. """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForTokenClassification(BertPreTrainedModel):
+class BertLSTMForTokenClassification(BertLSTMPreTrainedModel):
     r"""
         **labels**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size, sequence_length)``:
             Labels for computing the token classification loss.
@@ -1272,7 +1272,7 @@ class BertLSTMForTokenClassification(BertPreTrainedModel):
                       the hidden-states output to compute `span start logits` and `span end logits`). """,
                       BERT_START_DOCSTRING,
                       BERT_INPUTS_DOCSTRING)
-class BertLSTMForQuestionAnswering(BertPreTrainedModel):
+class BertLSTMForQuestionAnswering(BertLSTMPreTrainedModel):
     r"""
         **start_positions**: (`optional`) ``torch.LongTensor`` of shape ``(batch_size,)``:
             Labels for position (index) of the start of the labelled span for computing the token classification loss.
