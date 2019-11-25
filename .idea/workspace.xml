@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/dlts_aether_cmdlines" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/dlts_script_template.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/dlts_train_valid.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/install_pyrouge.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/length_exp.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/exp_mclstm.sh" afterPath="$PROJECT_DIR$/scripts/exp_mclstm.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train_abstractive.py" afterPath="$PROJECT_DIR$/src/train_abstractive.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/dlts_aether_cmdlines" afterPath="$PROJECT_DIR$/scripts/dlts_aether_cmdlines" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,117 +47,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dlts_script_template.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/dlts_script_template.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="76" column="87" lean-forward="false" selection-start-line="76" selection-start-column="84" selection-end-line="76" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dlts_train_valid.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/dlts_train_valid.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="295">
+              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/train.py">
+      <file leaf-file-name="length_exp.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/length_exp.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#6266#7063#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_extractive.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/train_extractive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4113">
-              <caret line="196" column="14" lean-forward="false" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="14" />
-              <folding>
-                <element signature="e#57#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_abstractive.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/train_abstractive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="336">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/transformers/__init__.py">
+      <file leaf-file-name="install_pyrouge.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/install_pyrouge.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="502">
+              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_builder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="123" column="24" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#346#1317#0" expanded="false" />
-                <element signature="e#1370#2423#0" expanded="false" />
-                <element signature="e#2475#3530#0" expanded="false" />
-                <element signature="e#3593#3774#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dlts_aether_cmdlines" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/dlts_aether_cmdlines">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="296" lean-forward="false" selection-start-line="0" selection-start-column="296" selection-end-line="0" selection-end-column="296" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainer_ext.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="291" column="49" lean-forward="false" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#4949#5949#0" expanded="false" />
-                <element signature="e#6073#7026#0" expanded="false" />
-                <element signature="e#8221#11147#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,8 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>model</find>
-      <find>BertPreTrainedModel</find>
       <find>_init_weights</find>
       <find>init_weights</find>
       <find>lstm</find>
@@ -207,6 +116,8 @@
       <find>BERT_DATA_PATH</find>
       <find>temp_dir</find>
       <find>temp</find>
+      <find>BERTT</find>
+      <find>bertbase</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -250,6 +161,8 @@
         <option value="$PROJECT_DIR$/scripts/dlts_script_template.sh" />
         <option value="$PROJECT_DIR$/scripts/dlts_train_valid.sh" />
         <option value="$PROJECT_DIR$/src/train_abstractive.py" />
+        <option value="$PROJECT_DIR$/scripts/length_exp.py" />
+        <option value="$PROJECT_DIR$/scripts/length_exp.sh" />
       </list>
     </option>
   </component>
@@ -371,13 +284,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00003" summary="change api for new BERT model">
-      <created>1573811371923</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1573811371923</updated>
     </task>
     <task id="LOCAL-00004" summary="add model_name and pretrain_name">
       <created>1574045454955</created>
@@ -715,17 +621,24 @@
       <option name="project" value="LOCAL" />
       <updated>1574414929975</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="change pytorch-transformers to transformers">
+      <created>1574668020332</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1574668020333</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="2272" height="1460" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21276596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -745,7 +658,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix bug in mclstm 1119.2" />
     <MESSAGE value="fix bug in mclstm 1119.3:.contiguous()" />
     <MESSAGE value="fix bug in mclstm 1119.4" />
     <MESSAGE value="fix bug in mclstm 1119.5" />
@@ -770,7 +682,8 @@
     <MESSAGE value="fix bug 6 1122" />
     <MESSAGE value="fix bug 7 1122" />
     <MESSAGE value="fix bug 8 1122" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug 8 1122" />
+    <MESSAGE value="change pytorch-transformers to transformers" />
+    <option name="LAST_COMMIT_MESSAGE" value="change pytorch-transformers to transformers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -790,87 +703,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3864">
-          <caret line="291" column="40" lean-forward="false" selection-start-line="291" selection-start-column="40" selection-end-line="291" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#4949#5949#0" expanded="false" />
-            <element signature="e#6073#7026#0" expanded="false" />
-            <element signature="e#8221#11147#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="115" column="17" lean-forward="false" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="38" />
-          <folding>
-            <element signature="e#57#88#0" expanded="false" />
-            <element signature="e#6266#7063#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="115" lean-forward="false" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_cat.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2478">
-          <caret line="260" column="8" lean-forward="false" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="8" />
-          <folding>
-            <element signature="e#737#819#0" expanded="false" />
-            <element signature="e#3348#5955#0" expanded="false" />
-            <element signature="e#5975#6394#0" expanded="false" />
-            <element signature="e#6418#6680#0" expanded="false" />
-            <element signature="e#6701#6728#0" expanded="false" />
-            <element signature="e#9053#12466#0" expanded="false" />
-            <element signature="e#13333#14490#0" expanded="false" />
-            <element signature="e#14974#15565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/exp_lstm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="102" lean-forward="false" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/others/pyrouge.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -878,24 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/distributed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -991,19 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-            <element signature="e#4338#5575#0" expanded="false" />
-            <element signature="e#6428#7227#0" expanded="false" />
-            <element signature="e#9881#13007#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transformers/modeling_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3227">
@@ -1018,13 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="71" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1099,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/install_pyrouge.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1131,31 +921,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="291" column="49" lean-forward="false" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#4949#5949#0" expanded="false" />
-            <element signature="e#6073#7026#0" expanded="false" />
-            <element signature="e#8221#11147#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/dlts_script_template.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="76" column="87" lean-forward="false" selection-start-line="76" selection-start-column="84" selection-end-line="76" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/dlts_train_valid.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1175,7 +944,7 @@
         <state relative-caret-position="4113">
           <caret line="196" column="14" lean-forward="false" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="14" />
           <folding>
-            <element signature="e#57#88#0" expanded="true" />
+            <element signature="e#57#88#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1185,20 +954,6 @@
         <state relative-caret-position="105">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="123" column="24" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#346#1317#0" expanded="false" />
-            <element signature="e#1370#2423#0" expanded="false" />
-            <element signature="e#2475#3530#0" expanded="false" />
-            <element signature="e#3593#3774#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,6 +969,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/adam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/data_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#4338#5575#0" expanded="false" />
+            <element signature="e#6428#7227#0" expanded="false" />
+            <element signature="e#9881#13007#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#67#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#188#219#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/model_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="123" column="24" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#346#1317#0" expanded="false" />
+            <element signature="e#1370#2423#0" expanded="false" />
+            <element signature="e#2475#3530#0" expanded="false" />
+            <element signature="e#3593#3774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/neural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/optimizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/predictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#59#96#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/reporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#31#68#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/reporter_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#31#68#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2728">
+          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/trainer_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#4949#5949#0" expanded="false" />
+            <element signature="e#6073#7026#0" expanded="false" />
+            <element signature="e#8221#11147#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dlts_train_valid.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/length_exp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/install_pyrouge.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding />
         </state>
       </provider>

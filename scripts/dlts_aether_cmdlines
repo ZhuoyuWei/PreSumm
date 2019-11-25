@@ -1,1 +1,1 @@
-python -m pip install virtualenv --user && python -m virtualenv /tmp/env && . /tmp/env/bin/activate && (cd ../mtdnn && pip install -r requirements.txt) && (python -m tensorboard.main --logdir . --port 40000 &) && cd /data/zhuoyu/summarization/scripts && sh formal_train_test_one_model.sh 8 mclstm
+sudo cp /root/.bashrc ~/ && echo "if [ -f /dlws/pod.env ]; then . /dlws/pod.env; fi" > ~/.profile && echo ". ~/.bashrc" >> ~/.profile && sudo pip install visdom && cd /data/zhuoyu/summarization/scripts && sh formal_train_test_one_model.sh @@run_id@@ @@global_layer_type@@
