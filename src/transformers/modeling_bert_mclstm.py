@@ -157,6 +157,7 @@ class BertEmbeddings(nn.Module):
         # any TensorFlow checkpoint file
         self.LayerNorm = BertLayerNorm(config.hidden_size, eps=config.layer_norm_eps)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
+        self.max_position_embeddings=config.max_position_embeddings
 
     def forward(self, input_ids=None, token_type_ids=None, position_ids=None, inputs_embeds=None):
         if input_ids is not None:
@@ -168,6 +169,7 @@ class BertEmbeddings(nn.Module):
         device = input_ids.device if input_ids is not None else inputs_embeds.device
         if position_ids is None:
             position_ids = torch.arange(seq_length, dtype=torch.long, device=device)
+            position_ids=position_ids.fmod(self.max_position_embeddings)
             position_ids = position_ids.unsqueeze(0).expand(input_shape)
         if token_type_ids is None:
             token_type_ids = torch.zeros(input_shape, dtype=torch.long, device=device)
