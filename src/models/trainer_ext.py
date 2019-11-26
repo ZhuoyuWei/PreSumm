@@ -227,8 +227,8 @@ class Trainer(object):
 
         can_path = '%s_step%d.candidate' % (self.args.result_path, step)
         gold_path = '%s_step%d.gold' % (self.args.result_path, step)
-        with open(can_path, 'w') as save_pred:
-            with open(gold_path, 'w') as save_gold:
+        with open(can_path, 'w',encoding='utf-8') as save_pred:
+            with open(gold_path, 'w',encoding='utf-8') as save_gold:
                 with torch.no_grad():
                     for batch in test_iter:
                         src = batch.src
@@ -288,7 +288,7 @@ class Trainer(object):
                             save_pred.write(pred[i].strip() + '\n')
         if (step != -1 and self.args.report_rouge):
             rouge_path='%s_step%d.rough' % (self.args.result_path, step)
-            with open(rouge_path, 'w') as rouge_log:
+            with open(rouge_path, 'w',encoding='utf-8') as rouge_log:
                 rouges = test_rouge(self.args.temp_dir, can_path, gold_path)
                 logger.info('Rouges at step %d \n%s' % (step, rouge_results_to_str(rouges)))
                 rouge_log.write('Rouges at step %d \n%s\n' % (step, rouge_results_to_str(rouges)))
