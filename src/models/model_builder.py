@@ -155,6 +155,7 @@ class ExtSummarizer(nn.Module):
         self.ext_layer = ExtTransformerEncoder(self.bert.model.config.hidden_size, args.ext_ff_size, args.ext_heads,
                                                args.ext_dropout, args.ext_layers)
         if (args.encoder == 'baseline'):
+            '''#without random initialization
             if args.model_name == 'bert':
                 from transformers import BertModel,BertConfig
                 bert_config = BertConfig(self.bert.model.config.vocab_size, hidden_size=args.ext_hidden_size,
@@ -176,7 +177,7 @@ class ExtSummarizer(nn.Module):
                                      num_hidden_layers=args.ext_layers, num_attention_heads=args.ext_heads,
                                              intermediate_size=args.ext_ff_size, lstm_layer=args.lstm_layer)
                 self.bert.model = BertLSTMModel(bert_config)
-
+            '''
             self.ext_layer = Classifier(self.bert.model.config.hidden_size)
 
         if args.model_name == 'bert':
