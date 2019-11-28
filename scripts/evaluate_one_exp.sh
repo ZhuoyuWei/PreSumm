@@ -59,18 +59,8 @@ mkdir $BERT_OUTPUT_PATH
 mkdir $BERT_OUTPUT_PATH/logs
 BERT_DATA_PATH=$CNNDM_DATA_DIR/cnndm
 
-cd code/PreSumm/src
-python train.py -task ext -mode train -bert_data_path $BERT_DATA_PATH \
--ext_dropout 0.1 -model_path $BERT_OUTPUT_PATH \
--lr 2e-3 -visible_gpus 0,1,2,3 -report_every 50 -save_checkpoint_steps 1000 -batch_size 2000 -train_steps 50000 -accum_count 2 \
--log_file $BERT_OUTPUT_PATH/logs/train.log -use_interval true -warmup_steps 10000 -max_pos $MAX_POS -dist_init_method "tcp://localhost:10003" \
--model_name bert_lstm -pretrained_name $MODEL_DIR -max_model_pos=$MAX_MODEL_POS -encoder=baseline
-cd ../../..
 
-
-
-
-#run validation
+#run validation 0
 ROUGE_TEMP_DIR=$BERT_OUTPUT_PATH/temp
 mkdir $ROUGE_TEMP_DIR
 cd code/PreSumm/src
@@ -85,9 +75,8 @@ python train.py -task ext -mode validate -batch_size 2000 -test_batch_size 2000 
 cd ../../..
 
 
-
 #report results
-echo all result finish
+echo all result finish?
 
 
 
