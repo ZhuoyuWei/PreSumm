@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="add split checkpoints script">
-      <change beforePath="$PROJECT_DIR$/.idea/PreSumm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PreSumm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="debug max_position_model">
+      <change afterPath="$PROJECT_DIR$/scripts/debug_one_time.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,24 +22,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="376" />
-          <entry key="sh" value="15" />
+          <entry key="py" value="392" />
+          <entry key="sh" value="55" />
+          <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="376" />
+          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="Python" value="392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -65,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="448">
@@ -76,6 +75,15 @@
                 <element signature="e#6418#6680#0" />
                 <element signature="e#6701#6728#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/debug_one_time.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -99,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/length_exp_same_as_bertsum.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="273">
+              <caret line="64" column="13" selection-start-line="62" selection-end-line="66" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -203,6 +211,8 @@
         <option value="$PROJECT_DIR$/scripts/evaluate_one_exp.sh" />
         <option value="$PROJECT_DIR$/scripts/length_exp_same_as_bertsum.sh" />
         <option value="$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py" />
+        <option value="$PROJECT_DIR$/scripts/debug_one_time.sh.py" />
+        <option value="$PROJECT_DIR$/scripts/debug_one_time.sh" />
       </list>
     </option>
   </component>
@@ -322,13 +332,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00007" summary="try add None for output of xlnet">
-      <created>1574050493683</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1574050493683</updated>
     </task>
     <task id="LOCAL-00008" summary="add bert lstm model">
       <created>1574144667001</created>
@@ -666,11 +669,19 @@
       <option name="project" value="LOCAL" />
       <updated>1574832234200</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="debug max_position_model">
+      <created>1575034240865</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1575034240866</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21052632" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -696,7 +707,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix bug in mclstm 1120.1" />
     <MESSAGE value="fix bug in mclstm 1120.2" />
     <MESSAGE value="max_pos and max_model_pos logic" />
     <MESSAGE value="debug 1120.1" />
@@ -721,7 +731,8 @@
     <MESSAGE value="add aether cmdlines" />
     <MESSAGE value="utf-8 for write golden and ref" />
     <MESSAGE value="add split checkpoints script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add split checkpoints script" />
+    <MESSAGE value="debug max_position_model" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug max_position_model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,13 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/train_xlnet.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1058,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/length_exp_same_as_bertsum.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1085,6 +1082,20 @@
             <element signature="e#6418#6680#0" />
             <element signature="e#6701#6728#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/length_exp_same_as_bertsum.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="64" column="13" selection-start-line="62" selection-end-line="66" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/debug_one_time.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
