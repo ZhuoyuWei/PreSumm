@@ -170,6 +170,8 @@ class BertEmbeddings(nn.Module):
         if position_ids is None:
             position_ids = torch.arange(seq_length, dtype=torch.long, device=device)
             position_ids=position_ids.fmod(self.max_position_embeddings)
+            print('max_position_embedding = {}'.format(self.max_position_embeddings))
+            print('position_ids={}'.format(position_ids))
             position_ids = position_ids.unsqueeze(0).expand(input_shape)
         if token_type_ids is None:
             token_type_ids = torch.zeros(input_shape, dtype=torch.long, device=device)
@@ -407,8 +409,10 @@ class BertLayer(nn.Module):
 
         #print('debug by zhuoyu, hidden_states {}'.format(hidden_states.size()))
         #print('debug by zhuoyu, attention_mask {}'.format(attention_mask.size()))
+        print('chunk size is {}'.format(self.chunk_size))
         seq_len=hidden_states.size()[1]
         hidden_chunks=hidden_states.split(self.chunk_size,dim=1)
+        print('hidden chunks size: {}'.format(hidden_chunks.size()))
         if attention_mask is not None:
             attention_mask_chunks=attention_mask.split(self.chunk_size,dim=-1)
         else:
@@ -432,10 +436,13 @@ class BertLayer(nn.Module):
             layer_output = self.output(intermediate_output, attention_output)
 
             layer_output_chucks.append(layer_output)
+            print('outputs in hidden chunk = {}'.format(outputs.size()))
             output_chucks.append(outputs)
 
 
         layer_output=self.global_layer(layer_output_chucks)
+
+        print('global layer is {}'.format(layer_output))
 
         #tmp no use, just for keeping same with the origin
         outputs = []
@@ -445,7 +452,8 @@ class BertLayer(nn.Module):
                 tmp_chunks.append(output_chucks[j][i])
             outputs.append(torch.cat(tmp_chunks,dim=1))
         outputs = (layer_output,) + tuple(outputs)
-
+        print('over by zhuoyu')
+        exit(-1)
         return outputs
 
 
