@@ -200,6 +200,7 @@ class ExtSummarizer(nn.Module):
                     self.bert.model.config.max_position_embeddings = args.max_pos
         elif args.model_name == 'bert_lstm':
             self.bert.model.config.max_position_embeddings=args.max_model_pos
+            print('max_model_pos={}'.format(args.max_model_pos))
 
 
 
