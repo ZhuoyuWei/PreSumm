@@ -57,9 +57,9 @@ cp /data/zhuoyu/summarization/models/bertbase/pytorch_model.bin $MODEL_DIR/
 cp /data/zhuoyu/summarization/models/bertbase/vocab.txt  $MODEL_DIR/
 #cp /data/zhuoyu/summarization/models/bertbase/config.$EXP_MODEL_NAME.json $MODEL_DIR/config.json
 
-cd code/PreSumm/src/prepro
-python change_max_pos.py /data/zhuoyu/summarization/models/bertbase/config.$EXP_MODEL_NAME.json $MODEL_DIR/config.json $MAX_MODEL_POS
-cd ../../../../
+#cd code/PreSumm/src/prepro
+#python change_max_pos.py /data/zhuoyu/summarization/models/bertbase/config.$EXP_MODEL_NAME.json $MODEL_DIR/config.json $MAX_MODEL_POS
+#cd ../../../../
 
 #run training
 BERT_OUTPUT_PATH=$OUTPUT_DIR/model_exp_output

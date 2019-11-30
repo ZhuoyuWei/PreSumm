@@ -200,6 +200,11 @@ class ExtSummarizer(nn.Module):
                     self.bert.model.config.max_position_embeddings = args.max_pos
         elif args.model_name == 'bert_lstm':
             self.bert.model.config.max_position_embeddings=args.max_model_pos
+            #embedding:self.max_position_embeddings = config.max_position_embeddings
+            #layer self.chunk_size = config.max_position_embeddings
+            self.bert.model.embeddings.max_position_embeddings=args.max_model_pos
+            for layer_i in range(len(self.bert.model.encoder.layer)):
+                self.bert.model.encoder.layer[layer_i].chunk_size=args.max_model_pos
 
 
 

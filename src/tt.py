@@ -14,3 +14,7 @@ output, (hn, cn)=lstm(x, (h0, c0))
 print('output {}'.format(output.size()))
 print('hn {}'.format(hn.size()))
 print('cn {}'.format(cn.size()))
+
+modellist=nn.ModuleList([nn.Linear(10,10) for i in range(10)])
+for i in range(len(modellist)):
+    print(modellist[i])
