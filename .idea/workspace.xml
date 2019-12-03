@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/evaluate_on_split_set.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prepro/count_json_length.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prepro/max_length.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/train_valid.sh" afterPath="$PROJECT_DIR$/scripts/train_valid.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,12 +48,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_valid.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="max_length.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prepro/max_length.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluate_on_split_set.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/evaluate_on_split_set.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_valid.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/train_valid.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="210">
+              <caret line="85" column="11" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="91" selection-end-column="145" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluate_one_exp.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts_backup/evaluate_one_exp.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_json_length.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prepro/count_json_length.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BertEncoder</find>
-      <find>BertLSTMModel</find>
       <find>report_r</find>
       <find>BertLayer</find>
       <find>bertlayer</find>
@@ -97,6 +141,8 @@
       <find>baseline</find>
       <find>encoder</find>
       <find>BERT_OUTPUT_PATH</find>
+      <find>cp</find>
+      <find>WDATA_DIR</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,6 +196,10 @@
         <option value="$PROJECT_DIR$/scripts/evaluate_one_exp.sh" />
         <option value="$PROJECT_DIR$/scripts/length_exp_same_as_bertsum.sh" />
         <option value="$PROJECT_DIR$/scripts/train_valid.sh" />
+        <option value="$PROJECT_DIR$/src/prepro/count_json_length.py" />
+        <option value="$PROJECT_DIR$/src/prepro/max_length.py" />
+        <option value="$PROJECT_DIR$/scripts/evaluate_on_split_set.py" />
+        <option value="$PROJECT_DIR$/scripts/evaluate_on_split_set.sh" />
       </list>
     </option>
   </component>
@@ -193,6 +243,11 @@
             <path>
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts_backup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -200,6 +255,12 @@
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="post" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="prepro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
@@ -266,13 +327,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add bert lstm model">
-      <created>1574144667001</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1574144667001</updated>
     </task>
     <task id="LOCAL-00009" summary="tmp change chunk_num">
       <created>1574145540783</created>
@@ -610,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574951556133</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fix cp config bug in script">
+      <created>1575254137266</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1575254137266</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,7 +701,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix bug in mclstm 1120.2" />
     <MESSAGE value="max_pos and max_model_pos logic" />
     <MESSAGE value="debug 1120.1" />
     <MESSAGE value="fix 1120.1" />
@@ -665,7 +725,8 @@
     <MESSAGE value="utf-8 for write golden and ref" />
     <MESSAGE value="add split checkpoints script" />
     <MESSAGE value="modify sh" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify sh" />
+    <MESSAGE value="fix cp config bug in script" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cp config bug in script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,42 +746,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/train_xlnet.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/tokenization_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6531">
-          <caret line="321" column="29" lean-forward="false" selection-start-line="321" selection-start-column="29" selection-end-line="321" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/tokenization_bert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/file_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tt2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-313451744/builtins.py" />
     <entry file="file://$PROJECT_DIR$/src/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -1064,10 +1089,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_backup/install_pyrouge.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prepro/change_max_pos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prepro/count_json_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prepro/max_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_backup/evaluate_one_exp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/train_valid.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+        <state relative-caret-position="210">
+          <caret line="85" column="11" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="91" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/evaluate_on_split_set.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
           <folding />
         </state>
       </provider>
