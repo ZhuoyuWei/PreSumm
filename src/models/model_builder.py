@@ -191,7 +191,7 @@ class ExtSummarizer(nn.Module):
                     while offset < args.max_pos:
                         if offset+args.max_model_pos < args.max_pos:
                             my_pos_embeddings.weight.data[offset:offset+args.max_model_pos] \
-                                = self.bert.model.embeddings.position_embeddings.weight.data.contiguous()
+                                = self.bert.model.embeddings.position_embeddings.weight.data[:args.max_model_pos].contiguous()
                         else:
                             my_pos_embeddings.weight.data[offset:] = self.bert.model.embeddings.position_embeddings.weight.data[-1][None,:]\
                                 .repeat(args.max_pos-offset,1)
