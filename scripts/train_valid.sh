@@ -72,7 +72,7 @@ python train.py -task ext -mode train -bert_data_path $BERT_DATA_PATH \
 -ext_dropout 0.1 -model_path $BERT_OUTPUT_PATH \
 -lr 2e-3 -visible_gpus 0,1,2,3 -report_every 50 -save_checkpoint_steps 1000 -batch_size 2000 -train_steps 50000 -accum_count 2 \
 -log_file $BERT_OUTPUT_PATH/logs/train.log -use_interval true -warmup_steps 10000 -max_pos $MAX_POS -dist_init_method "tcp://localhost:10003" \
--model_name $ZONG_MODEL -pretrained_name $MODEL_DIR -max_model_pos=$MAX_MODEL_POS -encoder=$ENCODER_TYPE
+-model_name $ZONG_MODEL -pretrained_name $MODEL_DIR -max_model_pos=$MAX_MODEL_POS -encoder=$ENCODER_TYPE -bert_baseline=2
 cd ../../..
 
 
@@ -89,7 +89,8 @@ python train.py -task ext -mode validate -batch_size 2000 -test_batch_size 2000 
 -sep_optim true -use_interval true -visible_gpus 0 \
 -max_pos $MAX_POS -max_length 200 -alpha 0.95 -min_length 50 \
 -result_path $BERT_OUTPUT_PATH/logs/exp_bert_cnndm.res \
--test_all true -model_name $ZONG_MODEL -pretrained_name $MODEL_DIR -max_model_pos=$MAX_MODEL_POS -temp_dir=$ROUGE_TEMP_DIR -encoder=$ENCODER_TYPE
+-test_all true -model_name $ZONG_MODEL -pretrained_name $MODEL_DIR -max_model_pos=$MAX_MODEL_POS -temp_dir=$ROUGE_TEMP_DIR -encoder=$ENCODER_TYPE \
+-bert_baseline=2
 cd ../../..
 
 
