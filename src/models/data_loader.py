@@ -219,6 +219,7 @@ class DataIterator(object):
         tgt_txt = ex['tgt_txt']
 
         end_id = [src[-1]]
+
         src = src[:-1][:self.args.max_pos - 1] + end_id
         segs = segs[:self.args.max_pos]
         max_sent_id = bisect.bisect_left(clss, self.args.max_pos)
