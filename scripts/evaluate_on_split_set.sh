@@ -11,6 +11,13 @@ ENCODER_TYPE=$6  #'bert', 'baseline'
 
 SPLIT=$7 #short, long, very_long
 
+echo EXP_ID=$EXP_ID
+echo EXP_MODEL_NAME=$EXP_MODEL_NAME
+echo MAX_POS=$MAX_POS
+echo MAX_MODEL_POS=$MAX_MODEL_POS
+echo ZONG_MODEL=$ZONG_MODEL
+echo ENCODER_TYPE=$ENCODER_TYPE
+echo SPLIT=$SPLIT
 
 WDATA_DIR=/data/zhuoyu/summarization/wdata
 OUTPUT_DIR=$WDATA_DIR/$EXP_ID
@@ -37,9 +44,10 @@ fi
 #copy data
 DATA_DIR=$EXP_ROOT_DIR/data
 mkdir $DATA_DIR
-cp -r /data/zhuoyu/summarization/split_datas/$SPLIT_data $DATA_DIR/
+echo "copy data from" /data/zhuoyu/summarization/split_datas/$SPLIT"_data" "to " $DATA_DIR/
+cp -r /data/zhuoyu/summarization/split_datas/$SPLIT"_data" $DATA_DIR/
 CNNDM_DATA_DIR=$DATA_DIR/bert_data_cnndm_final
-mv $DATA_DIR/$SPLIT_data $DATA_DIR/bert_data_cnndm_final
+mv $DATA_DIR/$SPLIT"_data" $DATA_DIR/bert_data_cnndm_final
 
 
 #download code and install requirements
@@ -68,6 +76,9 @@ BERT_DATA_PATH=$CNNDM_DATA_DIR/cnndm
 ROUGE_TEMP_DIR=$BERT_OUTPUT_PATH/temp_$SPLIT
 mkdir $ROUGE_TEMP_DIR
 cd code/PreSumm/src
+echo 'max_pos='$MAX_POS
+echo 'max_model_pos='$MAX_MODEL_POS
+
 python train.py -task ext -mode validate -batch_size 2000 -test_batch_size 2000 \
 -bert_data_path $BERT_DATA_PATH \
 -log_file $BERT_OUTPUT_PATH/logs_$SPLIT/valid.log \
