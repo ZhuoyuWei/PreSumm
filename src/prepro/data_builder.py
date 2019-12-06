@@ -290,7 +290,6 @@ def format_to_bert(args):
         pool.close()
         pool.join()
 
-
 def _format_to_bert(params):
     corpus_type, json_file, args, save_file = params
     is_test = corpus_type == 'test'
@@ -325,6 +324,48 @@ def _format_to_bert(params):
     logger.info('Saving to %s' % save_file)
     torch.save(datasets, save_file)
     datasets = []
+    gc.collect()
+
+
+def format_to_with_label(args):
+    if (args.dataset != ''):
+        datasets = [args.dataset]
+    else:
+        datasets = ['train', 'valid', 'test']
+    for corpus_type in datasets:
+        a_lst = []
+        for json_f in glob.glob(pjoin(args.raw_path, '*' + corpus_type + '.*.json')):
+            real_name = json_f.split('/')[-1]
+            a_lst.append((corpus_type, json_f, args, pjoin(args.save_path, real_name.replace('json', 'jsonl'))))
+        print(a_lst)
+        pool = Pool(args.n_cpus)
+        for d in pool.imap(_format_to_with_label, a_lst):
+            pass
+
+        pool.close()
+        pool.join()
+
+
+def _format_to_with_label(params):
+    corpus_type, json_file, args, save_file = params
+    is_test = corpus_type == 'test'
+    if (os.path.exists(save_file)):
+        logger.info('Ignore %s' % save_file)
+        return
+
+
+    logger.info('Processing %s' % json_file)
+    jobs = json.load(open(json_file))
+    with open(save_file,'w') as fout:
+        for d in jobs:
+            source, tgt = d['src'], d['tgt']
+
+            sent_labels = greedy_selection(source[:args.max_src_nsents], tgt, 3)
+
+            d['sent_labels']=sent_labels
+
+            fout.write(json.dumps(d)+'\n')
+
     gc.collect()
 
 

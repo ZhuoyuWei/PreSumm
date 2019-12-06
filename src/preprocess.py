@@ -18,7 +18,10 @@ def do_format_to_bert(args):
     data_builder.format_to_bert(args)
     print(time.clock())
 
-
+def do_format_to_with_label(args):
+    print(time.clock())
+    data_builder.format_to_with_label(args)
+    print(time.clock())
 
 def do_format_xsum_to_lines(args):
     print(time.clock())
