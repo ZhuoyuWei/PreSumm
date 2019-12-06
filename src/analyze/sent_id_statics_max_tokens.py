@@ -6,7 +6,7 @@ id2count={}
 with open(sys.argv[1],'r') as f:
     for line in f:
         jobj=json.loads(line.strip())
-        labels=jobj['sent_label']
+        labels=jobj['sent_labels']
         for label in labels:
             if not label in id2count:
                 id2count[label]=0
