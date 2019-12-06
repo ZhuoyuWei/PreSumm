@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/evaluate_one_model_bertsum.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prepro/data_builder.py" afterPath="$PROJECT_DIR$/src/prepro/data_builder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/preprocess.py" afterPath="$PROJECT_DIR$/src/preprocess.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,13 +78,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="73" column="30" lean-forward="true" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="903">
+              <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sent_id_statics_max_tokens.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +164,8 @@
       <find>data_loader</find>
       <find>greedy_selection</find>
       <find>do_format_to_bert</find>
-      <find>do_</find>
       <find>greedy_selection(</find>
+      <find>do_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/train_xlnet.sh.py" />
         <option value="$PROJECT_DIR$/src/tt.py" />
         <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh.py" />
         <option value="$PROJECT_DIR$/src/tt2.py" />
@@ -215,6 +224,7 @@
         <option value="$PROJECT_DIR$/scripts/evaluate_one_model_bertsum.sh" />
         <option value="$PROJECT_DIR$/src/prepro/data_builder.py" />
         <option value="$PROJECT_DIR$/src/preprocess.py" />
+        <option value="$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py" />
       </list>
     </option>
   </component>
@@ -360,13 +370,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00015" summary="split seq_len//self.chunk_num">
-      <created>1574150484057</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1574150484057</updated>
     </task>
     <task id="LOCAL-00016" summary="split seq_len//self.chunk_num">
       <created>1574150492909</created>
@@ -704,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575451764719</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add format_to_with_label mode in preprocess.py">
+      <created>1575613888681</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1575613888681</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -734,7 +744,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initialize lstm parameters as zero" />
     <MESSAGE value="make dir" />
     <MESSAGE value="make dir for log" />
     <MESSAGE value="fix bug 1" />
@@ -759,7 +768,8 @@
     <MESSAGE value="train baseline 1 sh" />
     <MESSAGE value="add train baseline 2 sh" />
     <MESSAGE value="fix copy position embedding bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix copy position embedding bug" />
+    <MESSAGE value="add format_to_with_label mode in preprocess.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add format_to_with_label mode in preprocess.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,13 +789,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/train_bert_lstm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/evaluate.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1182,10 +1185,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="73" column="30" lean-forward="true" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="903">
+          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
