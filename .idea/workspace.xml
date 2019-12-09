@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50533a9a-c077-4a35-9376-e95ec3574f39" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/train_valid_p40.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py" afterPath="$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py" />
     </list>
@@ -46,6 +47,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="modeling_bert_mclstm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="381" column="32" lean-forward="true" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
+              <folding>
+                <element signature="e#3348#5955#0" expanded="false" />
+                <element signature="e#5975#6394#0" expanded="false" />
+                <element signature="e#6418#6680#0" expanded="false" />
+                <element signature="e#6701#6728#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration_bert_mclstm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert_mclstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="114" column="29" lean-forward="false" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="evaluate_one_model_bertsum.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/evaluate_one_model_bertsum.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,8 +85,18 @@
       <file leaf-file-name="train_valid.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/train_valid.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="41" selection-end-column="46" />
+            <state relative-caret-position="252">
+              <caret line="63" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_valid_p40.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/train_valid_p40.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -90,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sent_id_statics_max_tokens.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sent_id_statics_max_tokens.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="189">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -105,8 +141,8 @@
       <file leaf-file-name="data_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prepro/data_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="12" selection-end-line="348" selection-end-column="19" />
+            <state relative-caret-position="438">
+              <caret line="359" column="22" lean-forward="true" selection-start-line="359" selection-start-column="22" selection-end-line="359" selection-end-column="22" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#10382#11865#0" expanded="false" />
@@ -136,9 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>build_trainer</find>
-      <find>train_multi_ext</find>
-      <find>ExtTransformerEncoder</find>
       <find>embedding</find>
       <find>baseline</find>
       <find>BERT_OUTPUT_PATH</find>
@@ -166,6 +199,9 @@
       <find>greedy_selection(</find>
       <find>do_</find>
       <find>to_with</find>
+      <find>layer</find>
+      <find>lstm_l</find>
+      <find>EXP_MODEL_NAME</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,10 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tt.py" />
-        <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh.py" />
-        <option value="$PROJECT_DIR$/src/tt2.py" />
-        <option value="$PROJECT_DIR$/src/analyze/max_lengths.py" />
         <option value="$PROJECT_DIR$/scripts/train_bert_lstm.sh" />
         <option value="$PROJECT_DIR$/src/transformers/__init__.py" />
         <option value="$PROJECT_DIR$/scripts/exp_mclstm.py" />
@@ -225,11 +257,15 @@
         <option value="$PROJECT_DIR$/src/prepro/data_builder.py" />
         <option value="$PROJECT_DIR$/src/preprocess.py" />
         <option value="$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py" />
+        <option value="$PROJECT_DIR$/scripts/train_mclstm_more_layers.py" />
+        <option value="$PROJECT_DIR$/scripts/train_mclstm_more_layers.sh" />
+        <option value="$PROJECT_DIR$/scripts/train_valid_p40.sh.py" />
+        <option value="$PROJECT_DIR$/scripts/train_valid_p40.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
@@ -309,6 +345,12 @@
               <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="transformers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreSumm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreSumm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="translate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -370,13 +412,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573719161558</updated>
-    </task>
-    <task id="LOCAL-00017" summary="zeros">
-      <created>1574150944605</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1574150944605</updated>
     </task>
     <task id="LOCAL-00018" summary="directly remove h0 and c0">
       <created>1574151191605</created>
@@ -714,13 +749,20 @@
       <option name="project" value="LOCAL" />
       <updated>1575621458263</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="fix bug 1206">
+      <created>1575621606581</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1575621606581</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -744,7 +786,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make dir for log" />
     <MESSAGE value="fix bug 1" />
     <MESSAGE value="fix bug 2" />
     <MESSAGE value="getattr(module,'weight_ih_l{}'.format(i)).data.zero_()" />
@@ -769,7 +810,8 @@
     <MESSAGE value="fix copy position embedding bug" />
     <MESSAGE value="add format_to_with_label mode in preprocess.py" />
     <MESSAGE value="add sent id statics max tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sent id statics max tokens" />
+    <MESSAGE value="fix bug 1206" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug 1206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,20 +831,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/evaluate.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/logging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/exp_mclstm_debug.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -967,19 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="161" column="67" lean-forward="false" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
-          <folding>
-            <element signature="e#3348#5955#0" expanded="false" />
-            <element signature="e#5975#6394#0" expanded="false" />
-            <element signature="e#6418#6680#0" expanded="false" />
-            <element signature="e#6701#6728#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/encoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1026,14 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert_mclstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1138,14 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/train_valid.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="41" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/evaluate_one_model_bertsum.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1172,6 +1171,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="903">
@@ -1184,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prepro/data_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="12" selection-end-line="348" selection-end-column="19" />
+        <state relative-caret-position="438">
+          <caret line="359" column="22" lean-forward="true" selection-start-line="359" selection-start-column="22" selection-end-line="359" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#10382#11865#0" expanded="false" />
@@ -1193,13 +1202,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyze/sent_id_statics_max_tokens.py">
+    <entry file="file://$PROJECT_DIR$/scripts/train_mclstm_more_layers.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="207">
+          <caret line="59" column="68" lean-forward="false" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/configuration_bert_mclstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="114" column="29" lean-forward="false" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformers/modeling_bert_mclstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="381" column="32" lean-forward="true" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#3348#5955#0" expanded="false" />
+            <element signature="e#5975#6394#0" expanded="false" />
+            <element signature="e#6418#6680#0" expanded="false" />
+            <element signature="e#6701#6728#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_valid.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="63" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_valid_p40.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
